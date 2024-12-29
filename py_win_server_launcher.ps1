@@ -368,13 +368,55 @@ function Stop-ServerProcess {
     try {
         Write-ServerLog -ServerName $serverName -Message "Attempting to stop process and cleanup for $($process.Id)..."
         
-        # Kill the Python process
-        if (-not $process.HasExited) {
-            $process.Kill()
-            Write-ServerLog -ServerName $serverName -Message "Killed Python process" -Type "SUCCESS"
+        # Get WMI process object for the main process
+        $wmiProcess = Get-WmiObject Win32_Process -Filter "ProcessId = $($process.Id)"
+        Write-ServerLog -ServerName $serverName -Message "Main process is: $($wmiProcess.Name)" -Type "DEBUG"
+        
+        # If this is a shell process (cmd.exe or powershell.exe)
+        if ($wmiProcess.Name -in @("cmd.exe", "powershell.exe")) {
+            # Get all child processes recursively
+            $childrenToKill = Get-WmiObject Win32_Process | Where-Object { 
+                $parentChain = @()
+                $currentId = $_.ProcessId
+                $parentId = $_.ParentProcessId
+                
+                while ($parentId -ne 0) {
+                    if ($parentId -eq $process.Id) {
+                        return $true
+                    }
+                    $parentChain += $parentId
+                    $parent = Get-WmiObject Win32_Process -Filter "ProcessId = $parentId" -ErrorAction SilentlyContinue
+                    if (-not $parent) { break }
+                    $currentId = $parentId
+                    $parentId = $parent.ParentProcessId
+                }
+                return $false
+            }
+            
+            # Kill child processes from leaf to root
+            foreach ($childProc in $childrenToKill) {
+                try {
+                    Write-ServerLog -ServerName $serverName -Message "Attempting to kill child process: $($childProc.ProcessId) ($($childProc.Name))" -Type "DEBUG"
+                    $child = Get-Process -Id $childProc.ProcessId -ErrorAction SilentlyContinue
+                    if ($child) {
+                        $child.Kill()
+                        Write-ServerLog -ServerName $serverName -Message "Killed child process $($childProc.ProcessId) ($($childProc.Name))" -Type "SUCCESS"
+                    }
+                }
+                catch {
+                    Write-ServerLog -ServerName $serverName -Message "Error killing child process $($childProc.ProcessId): $_" -Type "WARNING"
+                }
+            }
         }
         
-        # Find and kill the PowerShell process running our startup script
+        # Kill the main process
+        if (-not $process.HasExited) {
+            Write-ServerLog -ServerName $serverName -Message "Killing main process $($process.Id)" -Type "DEBUG"
+            $process.Kill()
+            Write-ServerLog -ServerName $serverName -Message "Killed main process" -Type "SUCCESS"
+        }
+        
+        # Find and kill the PowerShell host process from our launcher
         $psProcesses = Get-WmiObject Win32_Process | 
             Where-Object { 
                 $_.Name -eq "powershell.exe" -and 
@@ -385,6 +427,7 @@ function Stop-ServerProcess {
             try {
                 $psProcess = Get-Process -Id $ps.ProcessId -ErrorAction SilentlyContinue
                 if ($psProcess) {
+                    Write-ServerLog -ServerName $serverName -Message "Killing launcher PowerShell process $($ps.ProcessId)" -Type "DEBUG"
                     $psProcess.Kill()
                     Write-ServerLog -ServerName $serverName -Message "Killed PowerShell host process" -Type "SUCCESS"
                     Write-ServerLog -ServerName $serverName -Message "Note: You can close the terminal tab with Ctrl+D" -Type "INFO"
@@ -406,6 +449,7 @@ function Stop-ServerProcess {
 
 
 
+
 # Function to check if a server process is running
 function Test-ServerRunning {
     param(
@@ -416,66 +460,115 @@ function Test-ServerRunning {
     
     Write-ServerLog -ServerName $serverName -Message "Checking for running instances..."
     
-    # Extract the script name
-    $scriptName = Split-Path $scriptPath -Leaf
+    $runningProcesses = @()
     
-    # Get all Python processes with parent process information
-    $pythonProcesses = Get-WmiObject Win32_Process | 
-        Where-Object { $_.Name -like "*python*" } |
-        ForEach-Object {
-            $parent = Get-WmiObject Win32_Process -Filter "ProcessId = $($_.ParentProcessId)"
-            @{
-                ProcessId = $_.ProcessId
-                ParentProcessId = $_.ParentProcessId
-                ParentName = $parent.Name
-                CommandLine = $_.CommandLine
-                Process = $_
+    if ($venvPath -eq "not_needed") {
+        # Extract the actual command being run for different shell types
+        $shellCommand = ""
+        $shellType = ""
+        
+        if ($scriptPath -like "cmd.exe*") {
+            $shellType = "cmd"
+            $shellCommand = $scriptPath -replace '^cmd\.exe\s+/c\s+', ''
+        }
+        elseif ($scriptPath -like "powershell.exe*") {
+            $shellType = "powershell"
+            $shellCommand = $scriptPath -replace '^powershell\.exe\s+(?:-Command\s+)?', ''
+        }
+        else {
+            # Direct command without shell prefix
+            $shellType = "direct"
+            $shellCommand = $scriptPath
+        }
+        
+        Write-ServerLog -ServerName $serverName -Message "Looking for $shellType command: $shellCommand" -Type "DEBUG"
+            
+        # Find processes based on shell type
+        $processes = Get-WmiObject Win32_Process | Where-Object {
+            if ($shellType -eq "cmd") {
+                $_.Name -eq "cmd.exe" -and $_.CommandLine -like "*$shellCommand*"
+            }
+            elseif ($shellType -eq "powershell") {
+                $_.Name -eq "powershell.exe" -and $_.CommandLine -like "*$shellCommand*" -and 
+                # Exclude our launcher processes
+                (-not ($_.CommandLine -like "*ServerLauncher_*\start_*.ps1*"))
+            }
+            else {
+                $_.CommandLine -like "*$shellCommand*"
             }
         }
-    
-    Write-ServerLog -ServerName $serverName -Message "Found $($pythonProcesses.Count) Python processes"
-    
-    # Log all found processes and their relationships
-    foreach ($proc in $pythonProcesses) {
-        Write-ServerLog -ServerName $serverName -Message @"
-Python Process Details:
-  PID: $($proc.ProcessId)
-  Parent PID: $($proc.ParentProcessId)
-  Parent Process: $($proc.ParentName)
-  Command: $($proc.CommandLine)
-"@ -Type "DEBUG"
-    }
-    
-    # Filter processes - only consider those running our script
-    $runningProcesses = @()
-    foreach ($proc in $pythonProcesses) {
-        if ($proc.CommandLine -like "*$scriptName*") {
+            
+        foreach ($proc in $processes) {
             try {
+                # Get both the shell process and its child processes
                 $process = Get-Process -Id $proc.ProcessId
                 $processInfo = Get-ServerProcessInfo -process $process
                 if ($processInfo) {
+                    # Get child processes
+                    $childProcesses = Get-WmiObject Win32_Process | 
+                        Where-Object { $_.ParentProcessId -eq $proc.ProcessId }
+                    
                     $runningProcesses += @{
                         Process = $process
                         Info = $processInfo
                         CommandLine = $proc.CommandLine
                         ParentProcessId = $proc.ParentProcessId
-                        ParentName = $proc.ParentName
+                        ParentName = (Get-WmiObject Win32_Process -Filter "ProcessId = $($proc.ParentProcessId)").Name
+                        ShellType = $shellType
+                        ChildProcesses = $childProcesses
+                    }
+                    
+                    Write-ServerLog -ServerName $serverName -Message "Found $shellType process with children:" -Type "DEBUG"
+                    foreach ($child in $childProcesses) {
+                        Write-ServerLog -ServerName $serverName -Message "Child process: $($child.ProcessId) - $($child.Name)" -Type "DEBUG"
                     }
                 }
             }
             catch {
-                Write-ServerLog -ServerName $serverName -Message "Error accessing process $($proc.ProcessId): $_" -Type "WARNING"
+                Write-ServerLog -serverName $serverName -Message "Error accessing process $($proc.ProcessId): $_" -Type "WARNING"
+            }
+        }
+    }
+    else {
+        # For Python servers
+        $scriptName = Split-Path $scriptPath -Leaf
+        
+        # Get all Python processes
+        $pythonProcesses = Get-WmiObject Win32_Process | 
+            Where-Object { $_.Name -like "*python*" }
+        
+        foreach ($proc in $pythonProcesses) {
+            if ($proc.CommandLine -like "*$scriptName*") {
+                try {
+                    $process = Get-Process -Id $proc.ProcessId
+                    $processInfo = Get-ServerProcessInfo -process $process
+                    if ($processInfo) {
+                        $parent = Get-WmiObject Win32_Process -Filter "ProcessId = $($proc.ParentProcessId)"
+                        $runningProcesses += @{
+                            Process = $process
+                            Info = $processInfo
+                            CommandLine = $proc.CommandLine
+                            ParentProcessId = $proc.ParentProcessId
+                            ParentName = $parent.Name
+                        }
+                    }
+                }
+                catch {
+                    Write-ServerLog -serverName $serverName -Message "Error accessing process $($proc.ProcessId): $_" -Type "WARNING"
+                }
             }
         }
     }
     
+    # Log process details
     if ($runningProcesses.Count -gt 0) {
-        Write-ServerLog -ServerName $serverName -Message "Found $($runningProcesses.Count) related Python processes" -Type "WARNING"
+        Write-ServerLog -ServerName $serverName -Message "Found $($runningProcesses.Count) related processes" -Type "WARNING"
         foreach ($proc in $runningProcesses) {
             $info = $proc.Info
+            $shellInfo = if ($proc.ShellType) { " ($($proc.ShellType) process)" } else { "" }
             Write-ServerLog -ServerName $serverName -Message @"
 Process Details:
-  PID: $($info.ProcessId)
+  PID: $($info.ProcessId)$shellInfo
   Parent PID: $($proc.ParentProcessId)
   Parent Process: $($proc.ParentName)
   CPU: $($info.CPU)
@@ -484,19 +577,35 @@ Process Details:
   Start Time: $($info.StartTime)
   Command: $($proc.CommandLine)
 "@ -Type "WARNING"
+
+            if ($proc.ChildProcesses) {
+                foreach ($child in $proc.ChildProcesses) {
+                    Write-ServerLog -ServerName $serverName -Message "  Child Process: $($child.ProcessId) - $($child.Name)" -Type "DEBUG"
+                }
+            }
         }
         
-        # Return only the main process (the one from venv)
-        $mainProcess = $runningProcesses | Where-Object { $_.CommandLine -like "*$venvPath*" }
-        if ($mainProcess) {
-            return @($mainProcess)
+        # For Python servers, return only the venv process if found
+        if ($venvPath -ne "not_needed") {
+            $mainProcess = $runningProcesses | Where-Object { $_.CommandLine -like "*$venvPath*" }
+            if ($mainProcess) {
+                return @($mainProcess)
+            }
         }
+        
+        # Return the first process found
         return @($runningProcesses[0])
     }
     
     Write-ServerLog -ServerName $serverName -Message "No running instances found"
     return $null
 }
+
+
+
+
+
+
 
 # Function to get user decision about running server
 function Get-ServerStartDecision {
@@ -569,6 +678,12 @@ function Test-VirtualEnvironment {
         [string]$serverName
     )
     
+    # Skip check if virtual environment is marked as not needed
+    if ($venvPath -eq "not_needed") {
+        Write-ServerLog -ServerName $serverName -Message "No virtual environment required" -Type "INFO"
+        return $true
+    }
+    
     $activateScript = Join-Path $venvPath "Scripts\activate.ps1"
     
     if (-not (Test-Path $venvPath)) {
@@ -586,22 +701,33 @@ function Test-VirtualEnvironment {
 
 
 
-# Function to launch a Windows Terminal instance
-function Start-ServerWindow {
+# Function to get startup script content
+function Get-StartupScript {
     param(
         [hashtable]$config
     )
     
-    $pos = $config.Position
-    $rmost = -$Global:CONFIG.Terminal.TitleLength  # Take rightmost N chars for title
-    $scriptName = $config.StartupCmd -replace '^python\s+', ''  # Extract script name from startup command
-    $windowTitle = -join ($config.Title, ": ", -join $scriptName[$rmost..-1])
+    if ($config.VenvPath -eq "not_needed") {
+        # Simple script for non-Python servers
+        return @"
+# Server startup script for $($config.ServerName)
+try {
+    Write-Host "Changing to directory: $($config.HomeFolder)" -ForegroundColor Cyan
+    Set-Location -Path '$($config.HomeFolder)'
     
-    # Create a PowerShell script block that will:
-    # 1. Navigate to server directory
-    # 2. Activate virtual environment
-    # 3. Start the Python script
-    $startScript = @"
+    Write-Host "Starting server: $($config.StartupCmd)" -ForegroundColor Green
+    $($config.StartupCmd)
+}
+catch {
+    Write-Host "Error during startup: `$_" -ForegroundColor Red
+    Write-Host "Press any key to exit..."
+    `$null = `$Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')
+}
+"@
+    }
+    else {
+        # Script with virtual environment activation for Python servers
+        return @"
 # Server startup script for $($config.ServerName)
 try {
     Write-Host "Changing to directory: $($config.HomeFolder)" -ForegroundColor Cyan
@@ -619,6 +745,24 @@ catch {
     `$null = `$Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')
 }
 "@
+    }
+}
+
+
+
+# Function to launch a Windows Terminal instance
+function Start-ServerWindow {
+    param(
+        [hashtable]$config
+    )
+    
+    $pos = $config.Position
+    $rmost = -$Global:CONFIG.Terminal.TitleLength  # Take rightmost N chars for title
+    $scriptName = $config.StartupCmd -replace '^python\s+', ''  # Extract script name from command
+    $windowTitle = -join ($config.Title, ": ", -join $scriptName[$rmost..-1])
+    
+    # Get appropriate startup script based on server type
+    $startScript = Get-StartupScript -config $config
     
     # Create a unique temporary directory for this server
     $tempDir = Join-Path $env:TEMP "ServerLauncher_$($config.ServerName)"
@@ -655,6 +799,8 @@ catch {
 
 
 
+
+
 # Function to validate server paths and environment
 function Test-ServerEnvironment {
     param(
@@ -672,7 +818,12 @@ function Test-ServerEnvironment {
         return $false
     }
     
-    # Check server script
+    # For non-Python servers, skip script file check
+    if ($config.VenvPath -eq "not_needed") {
+        return $true
+    }
+    
+    # For Python servers, check for script file
     $scriptPath = Join-Path $config.HomeFolder "$($config.ServerName).py"
     if (-not (Test-Path $scriptPath)) {
         Write-ServerLog -ServerName $config.ServerName -Message "Server script not found: $scriptPath" -Type "ERROR"
@@ -681,6 +832,8 @@ function Test-ServerEnvironment {
     
     return $true
 }
+
+
 
 # Function to handle server process management
 function Start-ServerProcessManagement {

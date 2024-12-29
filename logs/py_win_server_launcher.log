@@ -432,3 +432,783 @@ at <ScriptBlock>, <No file>: line 1
 [2024-12-29 21:54:41] [INFO] [s03] Launching with command: python s03.py
 [2024-12-29 21:54:42] [INFO] [s04] Launching server window...
 [2024-12-29 21:54:42] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:00:34] [SUCCESS] [Config] Loaded 5 server configurations
+[2024-12-30 00:00:34] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:00:34] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:00:34] [ERROR] [ollama-server] Server script not found: C:\Servers\ollama-server.py
+[2024-12-30 00:00:34] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:00:34] [INFO] [s01] Found 0 Python processes
+[2024-12-30 00:00:34] [INFO] [s01] No running instances found
+[2024-12-30 00:00:34] [INFO] [s01] Added to launch queue
+[2024-12-30 00:00:34] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:00:34] [INFO] [s02] Found 0 Python processes
+[2024-12-30 00:00:34] [INFO] [s02] No running instances found
+[2024-12-30 00:00:34] [INFO] [s02] Added to launch queue
+[2024-12-30 00:00:34] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:00:34] [INFO] [s03] Found 0 Python processes
+[2024-12-30 00:00:34] [INFO] [s03] No running instances found
+[2024-12-30 00:00:34] [INFO] [s03] Added to launch queue
+[2024-12-30 00:00:34] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:00:34] [INFO] [s04] Found 0 Python processes
+[2024-12-30 00:00:34] [INFO] [s04] No running instances found
+[2024-12-30 00:00:34] [INFO] [s04] Added to launch queue
+[2024-12-30 00:00:34] [INFO] [Launcher] Launching 4 server(s)...
+[2024-12-30 00:00:34] [INFO] [s01] Launching server window...
+[2024-12-30 00:00:34] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:00:35] [INFO] [s02] Launching server window...
+[2024-12-30 00:00:35] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:00:36] [INFO] [s03] Launching server window...
+[2024-12-30 00:00:36] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:00:37] [INFO] [s04] Launching server window...
+[2024-12-30 00:00:37] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:08:12] [SUCCESS] [Config] Loaded 5 server configurations
+[2024-12-30 00:08:12] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:08:12] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:08:12] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:08:12] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:08:12] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:08:12] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:08:13] [INFO] [s01] No running instances found
+[2024-12-30 00:08:13] [INFO] [s01] Added to launch queue
+[2024-12-30 00:08:13] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:08:13] [INFO] [s02] No running instances found
+[2024-12-30 00:08:13] [INFO] [s02] Added to launch queue
+[2024-12-30 00:08:13] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:08:13] [INFO] [s03] No running instances found
+[2024-12-30 00:08:13] [INFO] [s03] Added to launch queue
+[2024-12-30 00:08:13] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:08:13] [INFO] [s04] No running instances found
+[2024-12-30 00:08:13] [INFO] [s04] Added to launch queue
+[2024-12-30 00:08:13] [INFO] [Launcher] Launching 5 server(s)...
+[2024-12-30 00:08:13] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:08:13] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:08:14] [INFO] [s01] Launching server window...
+[2024-12-30 00:08:14] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:08:14] [INFO] [s02] Launching server window...
+[2024-12-30 00:08:14] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:08:15] [INFO] [s03] Launching server window...
+[2024-12-30 00:08:15] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:08:16] [INFO] [s04] Launching server window...
+[2024-12-30 00:08:16] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:08:45] [SUCCESS] [Config] Loaded 5 server configurations
+[2024-12-30 00:08:45] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:08:45] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:08:45] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:08:45] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:08:45] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:08:45] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:08:45] [INFO] [s01] No running instances found
+[2024-12-30 00:08:45] [INFO] [s01] Added to launch queue
+[2024-12-30 00:08:45] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:08:45] [INFO] [s02] No running instances found
+[2024-12-30 00:08:45] [INFO] [s02] Added to launch queue
+[2024-12-30 00:08:45] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:08:46] [INFO] [s03] No running instances found
+[2024-12-30 00:08:46] [INFO] [s03] Added to launch queue
+[2024-12-30 00:08:46] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:08:46] [INFO] [s04] No running instances found
+[2024-12-30 00:08:46] [INFO] [s04] Added to launch queue
+[2024-12-30 00:08:46] [INFO] [Launcher] Launching 5 server(s)...
+[2024-12-30 00:08:46] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:08:46] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:08:46] [INFO] [s01] Launching server window...
+[2024-12-30 00:08:46] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:08:47] [INFO] [s02] Launching server window...
+[2024-12-30 00:08:47] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:08:48] [INFO] [s03] Launching server window...
+[2024-12-30 00:08:48] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:08:48] [INFO] [s04] Launching server window...
+[2024-12-30 00:08:48] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:09:14] [SUCCESS] [Config] Loaded 5 server configurations
+[2024-12-30 00:09:14] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:09:14] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:09:14] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:09:14] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:09:14] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:09:14] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:09:15] [INFO] [s01] No running instances found
+[2024-12-30 00:09:15] [INFO] [s01] Added to launch queue
+[2024-12-30 00:09:15] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:09:15] [INFO] [s02] No running instances found
+[2024-12-30 00:09:15] [INFO] [s02] Added to launch queue
+[2024-12-30 00:09:15] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:09:16] [INFO] [s03] No running instances found
+[2024-12-30 00:09:16] [INFO] [s03] Added to launch queue
+[2024-12-30 00:09:16] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:09:16] [INFO] [s04] No running instances found
+[2024-12-30 00:09:16] [INFO] [s04] Added to launch queue
+[2024-12-30 00:09:16] [INFO] [Launcher] Launching 5 server(s)...
+[2024-12-30 00:09:16] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:09:16] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:09:17] [INFO] [s01] Launching server window...
+[2024-12-30 00:09:17] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:09:18] [INFO] [s02] Launching server window...
+[2024-12-30 00:09:18] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:09:18] [INFO] [s03] Launching server window...
+[2024-12-30 00:09:18] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:09:19] [INFO] [s04] Launching server window...
+[2024-12-30 00:09:19] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:10:09] [SUCCESS] [Config] Loaded 5 server configurations
+[2024-12-30 00:10:09] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:10:09] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:10:09] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:10:09] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:10:09] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:10:09] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:10:09] [INFO] [s01] No running instances found
+[2024-12-30 00:10:09] [INFO] [s01] Added to launch queue
+[2024-12-30 00:10:09] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:10:09] [INFO] [s02] No running instances found
+[2024-12-30 00:10:09] [INFO] [s02] Added to launch queue
+[2024-12-30 00:10:09] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:10:10] [INFO] [s03] No running instances found
+[2024-12-30 00:10:10] [INFO] [s03] Added to launch queue
+[2024-12-30 00:10:10] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:10:10] [INFO] [s04] No running instances found
+[2024-12-30 00:10:10] [INFO] [s04] Added to launch queue
+[2024-12-30 00:10:10] [INFO] [Launcher] Launching 5 server(s)...
+[2024-12-30 00:10:10] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:10:10] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:10:11] [INFO] [s01] Launching server window...
+[2024-12-30 00:10:11] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:10:11] [INFO] [s02] Launching server window...
+[2024-12-30 00:10:11] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:10:12] [INFO] [s03] Launching server window...
+[2024-12-30 00:10:12] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:10:13] [INFO] [s04] Launching server window...
+[2024-12-30 00:10:13] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:10:33] [SUCCESS] [Config] Loaded 5 server configurations
+[2024-12-30 00:10:33] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:10:33] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:10:33] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:10:33] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:10:33] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:10:33] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:10:34] [INFO] [s01] No running instances found
+[2024-12-30 00:10:34] [INFO] [s01] Added to launch queue
+[2024-12-30 00:10:34] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:10:35] [INFO] [s02] No running instances found
+[2024-12-30 00:10:35] [INFO] [s02] Added to launch queue
+[2024-12-30 00:10:35] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:10:36] [INFO] [s03] No running instances found
+[2024-12-30 00:10:36] [INFO] [s03] Added to launch queue
+[2024-12-30 00:10:36] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:10:37] [INFO] [s04] No running instances found
+[2024-12-30 00:10:37] [INFO] [s04] Added to launch queue
+[2024-12-30 00:10:37] [INFO] [Launcher] Launching 5 server(s)...
+[2024-12-30 00:10:37] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:10:37] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:10:37] [INFO] [s01] Launching server window...
+[2024-12-30 00:10:38] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:10:38] [INFO] [s02] Launching server window...
+[2024-12-30 00:10:38] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:10:39] [INFO] [s03] Launching server window...
+[2024-12-30 00:10:39] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:10:39] [INFO] [s04] Launching server window...
+[2024-12-30 00:10:39] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:12:54] [SUCCESS] [Config] Loaded 5 server configurations
+[2024-12-30 00:12:54] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:12:54] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:12:54] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:12:54] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:12:54] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:12:54] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:12:55] [INFO] [s01] No running instances found
+[2024-12-30 00:12:55] [INFO] [s01] Added to launch queue
+[2024-12-30 00:12:55] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:12:58] [WARNING] [s02] Found 2 related processes
+[2024-12-30 00:12:58] [WARNING] [s02] Process Details:
+  PID: 16024
+  Parent PID: 19244
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.80 MB
+  Running Time: 00:02:43.9283367
+  Start Time: 12/30/2024 00:10:12
+  Command: "C:\Servers\venv_s02\Scripts\python.exe" s02.py
+[2024-12-30 00:12:58] [WARNING] [s02] Process Details:
+  PID: 24044
+  Parent PID: 16024
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.59 MB
+  Running Time: 00:02:45.1070351
+  Start Time: 12/30/2024 00:10:12
+  Command: "C:\Python\Python312\python.exe" s02.py
+[2024-12-30 00:13:08] [INFO] [s02] Stopping existing processes...
+[2024-12-30 00:13:08] [INFO] [s02] Attempting to stop process and cleanup for 16024...
+[2024-12-30 00:13:08] [SUCCESS] [s02] Killed Python process
+[2024-12-30 00:13:09] [SUCCESS] [s02] Killed PowerShell host process
+[2024-12-30 00:13:09] [INFO] [s02] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 00:13:09] [INFO] [s02] Added to launch queue
+[2024-12-30 00:13:09] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:13:09] [INFO] [s03] No running instances found
+[2024-12-30 00:13:09] [INFO] [s03] Added to launch queue
+[2024-12-30 00:13:09] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:13:09] [INFO] [s04] No running instances found
+[2024-12-30 00:13:09] [INFO] [s04] Added to launch queue
+[2024-12-30 00:13:09] [INFO] [Launcher] Launching 5 server(s)...
+[2024-12-30 00:13:09] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:13:09] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:13:10] [INFO] [s01] Launching server window...
+[2024-12-30 00:13:10] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:13:10] [INFO] [s02] Launching server window...
+[2024-12-30 00:13:10] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:13:11] [INFO] [s03] Launching server window...
+[2024-12-30 00:13:11] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:13:12] [INFO] [s04] Launching server window...
+[2024-12-30 00:13:12] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:13:24] [SUCCESS] [Config] Loaded 5 server configurations
+[2024-12-30 00:13:25] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:13:25] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:13:25] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:13:25] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:13:25] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:13:25] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:13:25] [INFO] [s01] No running instances found
+[2024-12-30 00:13:25] [INFO] [s01] Added to launch queue
+[2024-12-30 00:13:25] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:13:28] [WARNING] [s02] Found 2 related processes
+[2024-12-30 00:13:28] [WARNING] [s02] Process Details:
+  PID: 12604
+  Parent PID: 3428
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.82 MB
+  Running Time: 00:00:15.0733431
+  Start Time: 12/30/2024 00:13:11
+  Command: "C:\Servers\venv_s02\Scripts\python.exe" s02.py
+[2024-12-30 00:13:28] [WARNING] [s02] Process Details:
+  PID: 12820
+  Parent PID: 12604
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.61 MB
+  Running Time: 00:00:16.2900439
+  Start Time: 12/30/2024 00:13:11
+  Command: "C:\Python\Python312\python.exe" s02.py
+[2024-12-30 00:13:34] [INFO] [s02] Stopping existing processes...
+[2024-12-30 00:13:34] [INFO] [s02] Attempting to stop process and cleanup for 12604...
+[2024-12-30 00:13:34] [SUCCESS] [s02] Killed Python process
+[2024-12-30 00:13:34] [SUCCESS] [s02] Killed PowerShell host process
+[2024-12-30 00:13:34] [INFO] [s02] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 00:13:34] [INFO] [s02] Added to launch queue
+[2024-12-30 00:13:34] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:13:36] [WARNING] [s03] Found 2 related processes
+[2024-12-30 00:13:36] [WARNING] [s03] Process Details:
+  PID: 9064
+  Parent PID: 19916
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.82 MB
+  Running Time: 00:00:23.0227772
+  Start Time: 12/30/2024 00:13:12
+  Command: "C:\Servers\venv_s03\Scripts\python.exe" s03.py
+[2024-12-30 00:13:36] [WARNING] [s03] Process Details:
+  PID: 21540
+  Parent PID: 9064
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.66 MB
+  Running Time: 00:00:24.2126653
+  Start Time: 12/30/2024 00:13:12
+  Command: "C:\Python\Python312\python.exe" s03.py
+[2024-12-30 00:13:38] [INFO] [s03] Stopping existing processes...
+[2024-12-30 00:13:38] [INFO] [s03] Attempting to stop process and cleanup for 9064...
+[2024-12-30 00:13:38] [SUCCESS] [s03] Killed Python process
+[2024-12-30 00:13:38] [SUCCESS] [s03] Killed PowerShell host process
+[2024-12-30 00:13:38] [INFO] [s03] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 00:13:38] [INFO] [s03] Added to launch queue
+[2024-12-30 00:13:38] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:13:38] [INFO] [s04] No running instances found
+[2024-12-30 00:13:38] [INFO] [s04] Added to launch queue
+[2024-12-30 00:13:38] [INFO] [Launcher] Launching 5 server(s)...
+[2024-12-30 00:13:38] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:13:38] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:13:39] [INFO] [s01] Launching server window...
+[2024-12-30 00:13:39] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:13:40] [INFO] [s02] Launching server window...
+[2024-12-30 00:13:40] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:13:40] [INFO] [s03] Launching server window...
+[2024-12-30 00:13:40] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:13:41] [INFO] [s04] Launching server window...
+[2024-12-30 00:13:41] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:14:13] [SUCCESS] [Config] Loaded 5 server configurations
+[2024-12-30 00:14:13] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:14:13] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:14:13] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:14:13] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:14:13] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:14:13] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:14:14] [INFO] [s01] No running instances found
+[2024-12-30 00:14:14] [INFO] [s01] Added to launch queue
+[2024-12-30 00:14:14] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:14:14] [INFO] [s02] No running instances found
+[2024-12-30 00:14:14] [INFO] [s02] Added to launch queue
+[2024-12-30 00:14:14] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:14:14] [INFO] [s03] No running instances found
+[2024-12-30 00:14:14] [INFO] [s03] Added to launch queue
+[2024-12-30 00:14:14] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:14:14] [INFO] [s04] No running instances found
+[2024-12-30 00:14:14] [INFO] [s04] Added to launch queue
+[2024-12-30 00:14:14] [INFO] [Launcher] Launching 5 server(s)...
+[2024-12-30 00:14:14] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:14:14] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:14:15] [INFO] [s01] Launching server window...
+[2024-12-30 00:14:15] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:14:16] [INFO] [s02] Launching server window...
+[2024-12-30 00:14:16] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:14:17] [INFO] [s03] Launching server window...
+[2024-12-30 00:14:17] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:14:17] [INFO] [s04] Launching server window...
+[2024-12-30 00:14:17] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:14:37] [SUCCESS] [Config] Loaded 5 server configurations
+[2024-12-30 00:14:37] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:14:37] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:14:37] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:14:38] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:14:38] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:14:38] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:14:41] [WARNING] [s01] Found 2 related processes
+[2024-12-30 00:14:41] [WARNING] [s01] Process Details:
+  PID: 11660
+  Parent PID: 21856
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.82 MB
+  Running Time: 00:00:23.0241423
+  Start Time: 12/30/2024 00:14:16
+  Command: "C:\Servers\venv_s01\Scripts\python.exe" s01.py
+[2024-12-30 00:14:41] [WARNING] [s01] Process Details:
+  PID: 8992
+  Parent PID: 11660
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.63 MB
+  Running Time: 00:00:24.2364264
+  Start Time: 12/30/2024 00:14:16
+  Command: "C:\Python\Python312\python.exe" s01.py
+[2024-12-30 00:14:47] [INFO] [s01] Stopping existing processes...
+[2024-12-30 00:14:47] [INFO] [s01] Attempting to stop process and cleanup for 11660...
+[2024-12-30 00:14:47] [SUCCESS] [s01] Killed Python process
+[2024-12-30 00:14:47] [SUCCESS] [s01] Killed PowerShell host process
+[2024-12-30 00:14:47] [INFO] [s01] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 00:14:47] [INFO] [s01] Added to launch queue
+[2024-12-30 00:14:47] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:14:50] [WARNING] [s02] Found 2 related processes
+[2024-12-30 00:14:50] [WARNING] [s02] Process Details:
+  PID: 8824
+  Parent PID: 18272
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.80 MB
+  Running Time: 00:00:31.6836100
+  Start Time: 12/30/2024 00:14:17
+  Command: "C:\Servers\venv_s02\Scripts\python.exe" s02.py
+[2024-12-30 00:14:50] [WARNING] [s02] Process Details:
+  PID: 22348
+  Parent PID: 8824
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.59 MB
+  Running Time: 00:00:32.8854944
+  Start Time: 12/30/2024 00:14:17
+  Command: "C:\Python\Python312\python.exe" s02.py
+[2024-12-30 00:15:09] [INFO] [s02] Stopping existing processes...
+[2024-12-30 00:15:09] [INFO] [s02] Attempting to stop process and cleanup for 8824...
+[2024-12-30 00:15:09] [SUCCESS] [s02] Killed Python process
+[2024-12-30 00:15:09] [SUCCESS] [s02] Killed PowerShell host process
+[2024-12-30 00:15:09] [INFO] [s02] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 00:15:09] [INFO] [s02] Added to launch queue
+[2024-12-30 00:15:09] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:15:09] [INFO] [s03] No running instances found
+[2024-12-30 00:15:09] [INFO] [s03] Added to launch queue
+[2024-12-30 00:15:09] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:15:09] [INFO] [s04] No running instances found
+[2024-12-30 00:15:09] [INFO] [s04] Added to launch queue
+[2024-12-30 00:15:09] [INFO] [Launcher] Launching 5 server(s)...
+[2024-12-30 00:15:09] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:15:09] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:15:10] [INFO] [s01] Launching server window...
+[2024-12-30 00:15:10] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:15:11] [INFO] [s02] Launching server window...
+[2024-12-30 00:15:11] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:15:11] [INFO] [s03] Launching server window...
+[2024-12-30 00:15:11] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:15:12] [INFO] [s04] Launching server window...
+[2024-12-30 00:15:12] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:20:34] [SUCCESS] [Config] Loaded 6 server configurations
+[2024-12-30 00:20:34] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:20:34] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:20:34] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:20:34] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:20:34] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:20:34] [INFO] [pinger test] No virtual environment required
+[2024-12-30 00:20:34] [INFO] [pinger test] Checking for running instances...
+[2024-12-30 00:20:35] [INFO] [pinger test] No running instances found
+[2024-12-30 00:20:35] [INFO] [pinger test] Added to launch queue
+[2024-12-30 00:20:35] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:20:35] [INFO] [s01] No running instances found
+[2024-12-30 00:20:35] [INFO] [s01] Added to launch queue
+[2024-12-30 00:20:35] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:20:35] [INFO] [s02] No running instances found
+[2024-12-30 00:20:35] [INFO] [s02] Added to launch queue
+[2024-12-30 00:20:35] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:20:35] [INFO] [s03] No running instances found
+[2024-12-30 00:20:35] [INFO] [s03] Added to launch queue
+[2024-12-30 00:20:35] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:20:35] [INFO] [s04] No running instances found
+[2024-12-30 00:20:35] [INFO] [s04] Added to launch queue
+[2024-12-30 00:20:35] [INFO] [Launcher] Launching 6 server(s)...
+[2024-12-30 00:20:35] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:20:35] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:20:36] [INFO] [pinger test] Launching server window...
+[2024-12-30 00:20:36] [INFO] [pinger test] Launching with command: cmd.exe /c ping 1.1.1.1 -t
+[2024-12-30 00:20:36] [INFO] [s01] Launching server window...
+[2024-12-30 00:20:36] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:20:37] [INFO] [s02] Launching server window...
+[2024-12-30 00:20:37] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:20:38] [INFO] [s03] Launching server window...
+[2024-12-30 00:20:38] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:20:38] [INFO] [s04] Launching server window...
+[2024-12-30 00:20:38] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:20:56] [SUCCESS] [Config] Loaded 6 server configurations
+[2024-12-30 00:20:56] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:20:56] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:20:56] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:20:56] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:20:56] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:20:56] [INFO] [pinger test] No virtual environment required
+[2024-12-30 00:20:56] [INFO] [pinger test] Checking for running instances...
+[2024-12-30 00:20:57] [INFO] [pinger test] No running instances found
+[2024-12-30 00:20:57] [INFO] [pinger test] Added to launch queue
+[2024-12-30 00:20:57] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:20:59] [WARNING] [s01] Found 2 related processes
+[2024-12-30 00:20:59] [WARNING] [s01] Process Details:
+  PID: 5696
+  Parent PID: 10324
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.82 MB
+  Running Time: 00:00:20.1829825
+  Start Time: 12/30/2024 00:20:38
+  Command: "C:\Servers\venv_s01\Scripts\python.exe" s01.py
+[2024-12-30 00:20:59] [WARNING] [s01] Process Details:
+  PID: 26600
+  Parent PID: 5696
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.64 MB
+  Running Time: 00:00:21.3778340
+  Start Time: 12/30/2024 00:20:38
+  Command: "C:\Python\Python312\python.exe" s01.py
+[2024-12-30 00:21:04] [INFO] [s01] Stopping existing processes...
+[2024-12-30 00:21:04] [INFO] [s01] Attempting to stop process and cleanup for 5696...
+[2024-12-30 00:21:04] [SUCCESS] [s01] Killed Python process
+[2024-12-30 00:21:04] [SUCCESS] [s01] Killed PowerShell host process
+[2024-12-30 00:21:04] [INFO] [s01] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 00:21:04] [INFO] [s01] Added to launch queue
+[2024-12-30 00:21:04] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:21:07] [WARNING] [s02] Found 2 related processes
+[2024-12-30 00:21:07] [WARNING] [s02] Process Details:
+  PID: 11424
+  Parent PID: 2216
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.82 MB
+  Running Time: 00:00:27.6434641
+  Start Time: 12/30/2024 00:20:38
+  Command: "C:\Servers\venv_s02\Scripts\python.exe" s02.py
+[2024-12-30 00:21:07] [WARNING] [s02] Process Details:
+  PID: 11848
+  Parent PID: 11424
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.64 MB
+  Running Time: 00:00:28.8422100
+  Start Time: 12/30/2024 00:20:38
+  Command: "C:\Python\Python312\python.exe" s02.py
+[2024-12-30 00:21:09] [INFO] [s02] Stopping existing processes...
+[2024-12-30 00:21:09] [INFO] [s02] Attempting to stop process and cleanup for 11424...
+[2024-12-30 00:21:09] [SUCCESS] [s02] Killed Python process
+[2024-12-30 00:21:09] [SUCCESS] [s02] Killed PowerShell host process
+[2024-12-30 00:21:09] [INFO] [s02] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 00:21:09] [INFO] [s02] Added to launch queue
+[2024-12-30 00:21:09] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:21:12] [WARNING] [s03] Found 2 related processes
+[2024-12-30 00:21:12] [WARNING] [s03] Process Details:
+  PID: 23968
+  Parent PID: 24204
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.80 MB
+  Running Time: 00:00:31.6458636
+  Start Time: 12/30/2024 00:20:39
+  Command: "C:\Servers\venv_s03\Scripts\python.exe" s03.py
+[2024-12-30 00:21:12] [WARNING] [s03] Process Details:
+  PID: 19888
+  Parent PID: 23968
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.59 MB
+  Running Time: 00:00:32.8308883
+  Start Time: 12/30/2024 00:20:39
+  Command: "C:\Python\Python312\python.exe" s03.py
+[2024-12-30 00:21:13] [INFO] [s03] Stopping existing processes...
+[2024-12-30 00:21:13] [INFO] [s03] Attempting to stop process and cleanup for 23968...
+[2024-12-30 00:21:13] [SUCCESS] [s03] Killed Python process
+[2024-12-30 00:21:13] [SUCCESS] [s03] Killed PowerShell host process
+[2024-12-30 00:21:13] [INFO] [s03] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 00:21:13] [INFO] [s03] Added to launch queue
+[2024-12-30 00:21:13] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:21:16] [WARNING] [s04] Found 2 related processes
+[2024-12-30 00:21:16] [WARNING] [s04] Process Details:
+  PID: 14360
+  Parent PID: 19880
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.80 MB
+  Running Time: 00:00:35.1021170
+  Start Time: 12/30/2024 00:20:39
+  Command: "C:\Servers\venv_s04\Scripts\python.exe" s04.py
+[2024-12-30 00:21:16] [WARNING] [s04] Process Details:
+  PID: 20888
+  Parent PID: 14360
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.59 MB
+  Running Time: 00:00:36.2883548
+  Start Time: 12/30/2024 00:20:39
+  Command: "C:\Python\Python312\python.exe" s04.py
+[2024-12-30 00:21:17] [INFO] [s04] Stopping existing processes...
+[2024-12-30 00:21:17] [INFO] [s04] Attempting to stop process and cleanup for 14360...
+[2024-12-30 00:21:17] [SUCCESS] [s04] Killed Python process
+[2024-12-30 00:21:17] [SUCCESS] [s04] Killed PowerShell host process
+[2024-12-30 00:21:17] [INFO] [s04] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 00:21:17] [INFO] [s04] Added to launch queue
+[2024-12-30 00:21:17] [INFO] [Launcher] Launching 6 server(s)...
+[2024-12-30 00:21:17] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:21:17] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:21:18] [INFO] [pinger test] Launching server window...
+[2024-12-30 00:21:18] [INFO] [pinger test] Launching with command: cmd.exe /c ping 1.1.1.1 -t
+[2024-12-30 00:21:18] [INFO] [s01] Launching server window...
+[2024-12-30 00:21:18] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:21:19] [INFO] [s02] Launching server window...
+[2024-12-30 00:21:19] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:21:20] [INFO] [s03] Launching server window...
+[2024-12-30 00:21:20] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:21:21] [INFO] [s04] Launching server window...
+[2024-12-30 00:21:21] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:29:47] [SUCCESS] [Config] Loaded 6 server configurations
+[2024-12-30 00:29:47] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:29:47] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:29:47] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:29:47] [DEBUG] [ollama-server] Looking for direct command: C:\Servers\ollama-server.py
+[2024-12-30 00:29:47] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:29:47] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:29:47] [INFO] [pinger test] No virtual environment required
+[2024-12-30 00:29:47] [INFO] [pinger test] Checking for running instances...
+[2024-12-30 00:29:47] [DEBUG] [pinger test] Looking for direct command: C:\Servers\pinger test.py
+[2024-12-30 00:29:47] [INFO] [pinger test] No running instances found
+[2024-12-30 00:29:47] [INFO] [pinger test] Added to launch queue
+[2024-12-30 00:29:47] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:29:47] [ERROR] [Launcher] Error in launcher: The term '...' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2024-12-30 00:29:47] [ERROR] [Launcher] Stack Trace: at Test-ServerRunning, C:\Users\mgua\py_win_server_launcher\py_win_server_launcher.ps1: line 510
+at Start-ServerProcessManagement, C:\Users\mgua\py_win_server_launcher\py_win_server_launcher.ps1: line 788
+at Start-ServerLauncher, C:\Users\mgua\py_win_server_launcher\py_win_server_launcher.ps1: line 867
+at <ScriptBlock>, C:\Users\mgua\py_win_server_launcher\py_win_server_launcher.ps1: line 895
+at <ScriptBlock>, <No file>: line 1
+[2024-12-30 00:33:41] [SUCCESS] [Config] Loaded 6 server configurations
+[2024-12-30 00:33:41] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:33:41] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:33:41] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:33:41] [DEBUG] [ollama-server] Looking for direct command: C:\Servers\ollama-server.py
+[2024-12-30 00:33:42] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:33:42] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:33:42] [INFO] [pinger test] No virtual environment required
+[2024-12-30 00:33:42] [INFO] [pinger test] Checking for running instances...
+[2024-12-30 00:33:42] [DEBUG] [pinger test] Looking for direct command: C:\Servers\pinger test.py
+[2024-12-30 00:33:42] [INFO] [pinger test] No running instances found
+[2024-12-30 00:33:42] [INFO] [pinger test] Added to launch queue
+[2024-12-30 00:33:42] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:33:42] [INFO] [s01] No running instances found
+[2024-12-30 00:33:42] [INFO] [s01] Added to launch queue
+[2024-12-30 00:33:42] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:33:42] [INFO] [s02] No running instances found
+[2024-12-30 00:33:42] [INFO] [s02] Added to launch queue
+[2024-12-30 00:33:42] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:33:42] [INFO] [s03] No running instances found
+[2024-12-30 00:33:42] [INFO] [s03] Added to launch queue
+[2024-12-30 00:33:42] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:33:43] [INFO] [s04] No running instances found
+[2024-12-30 00:33:43] [INFO] [s04] Added to launch queue
+[2024-12-30 00:33:43] [INFO] [Launcher] Launching 6 server(s)...
+[2024-12-30 00:33:43] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:33:43] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:33:43] [INFO] [pinger test] Launching server window...
+[2024-12-30 00:33:43] [INFO] [pinger test] Launching with command: cmd.exe /c ping 1.1.1.1 -t
+[2024-12-30 00:33:44] [INFO] [s01] Launching server window...
+[2024-12-30 00:33:44] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:33:45] [INFO] [s02] Launching server window...
+[2024-12-30 00:33:45] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:33:45] [INFO] [s03] Launching server window...
+[2024-12-30 00:33:45] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:33:46] [INFO] [s04] Launching server window...
+[2024-12-30 00:33:46] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:34:04] [SUCCESS] [Config] Loaded 6 server configurations
+[2024-12-30 00:34:04] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:34:04] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:34:04] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:34:04] [DEBUG] [ollama-server] Looking for direct command: C:\Servers\ollama-server.py
+[2024-12-30 00:34:04] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:34:04] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:34:04] [INFO] [pinger test] No virtual environment required
+[2024-12-30 00:34:04] [INFO] [pinger test] Checking for running instances...
+[2024-12-30 00:34:04] [DEBUG] [pinger test] Looking for direct command: C:\Servers\pinger test.py
+[2024-12-30 00:34:05] [INFO] [pinger test] No running instances found
+[2024-12-30 00:34:05] [INFO] [pinger test] Added to launch queue
+[2024-12-30 00:34:05] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:34:07] [WARNING] [s01] Found 2 related processes
+[2024-12-30 00:34:07] [WARNING] [s01] Process Details:
+  PID: 23880
+  Parent PID: 9132
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.83 MB
+  Running Time: 00:00:21.0916657
+  Start Time: 12/30/2024 00:33:45
+  Command: "C:\Servers\venv_s01\Scripts\python.exe" s01.py
+[2024-12-30 00:34:07] [WARNING] [s01] Process Details:
+  PID: 13164
+  Parent PID: 23880
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.63 MB
+  Running Time: 00:00:22.3056379
+  Start Time: 12/30/2024 00:33:45
+  Command: "C:\Python\Python312\python.exe" s01.py
+[2024-12-30 00:34:13] [INFO] [s01] Stopping existing processes...
+[2024-12-30 00:34:13] [INFO] [s01] Attempting to stop process and cleanup for 23880...
+[2024-12-30 00:34:13] [SUCCESS] [s01] Killed main process
+[2024-12-30 00:34:13] [SUCCESS] [s01] Killed PowerShell host process
+[2024-12-30 00:34:13] [INFO] [s01] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 00:34:13] [INFO] [s01] Added to launch queue
+[2024-12-30 00:34:13] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:34:13] [INFO] [s02] No running instances found
+[2024-12-30 00:34:13] [INFO] [s02] Added to launch queue
+[2024-12-30 00:34:13] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:34:16] [WARNING] [s03] Found 2 related processes
+[2024-12-30 00:34:16] [WARNING] [s03] Process Details:
+  PID: 25656
+  Parent PID: 18740
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.82 MB
+  Running Time: 00:00:28.3420242
+  Start Time: 12/30/2024 00:33:46
+  Command: "C:\Servers\venv_s03\Scripts\python.exe" s03.py
+[2024-12-30 00:34:16] [WARNING] [s03] Process Details:
+  PID: 15508
+  Parent PID: 25656
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.65 MB
+  Running Time: 00:00:29.5683009
+  Start Time: 12/30/2024 00:33:46
+  Command: "C:\Python\Python312\python.exe" s03.py
+[2024-12-30 00:34:19] [INFO] [s03] Stopping existing processes...
+[2024-12-30 00:34:19] [INFO] [s03] Attempting to stop process and cleanup for 25656...
+[2024-12-30 00:34:19] [SUCCESS] [s03] Killed main process
+[2024-12-30 00:34:19] [SUCCESS] [s03] Killed PowerShell host process
+[2024-12-30 00:34:19] [INFO] [s03] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 00:34:19] [INFO] [s03] Added to launch queue
+[2024-12-30 00:34:19] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:34:19] [INFO] [s04] No running instances found
+[2024-12-30 00:34:19] [INFO] [s04] Added to launch queue
+[2024-12-30 00:34:19] [INFO] [Launcher] Launching 6 server(s)...
+[2024-12-30 00:34:19] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:34:19] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:34:20] [INFO] [pinger test] Launching server window...
+[2024-12-30 00:34:20] [INFO] [pinger test] Launching with command: cmd.exe /c ping 1.1.1.1 -t
+[2024-12-30 00:34:20] [INFO] [s01] Launching server window...
+[2024-12-30 00:34:20] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:34:21] [INFO] [s02] Launching server window...
+[2024-12-30 00:34:21] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:34:22] [INFO] [s03] Launching server window...
+[2024-12-30 00:34:22] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:34:22] [INFO] [s04] Launching server window...
+[2024-12-30 00:34:22] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:36:46] [SUCCESS] [Config] Loaded 6 server configurations
+[2024-12-30 00:36:46] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:36:46] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:36:46] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:36:46] [DEBUG] [ollama-server] Looking for direct command: C:\Servers\ollama-server.py
+[2024-12-30 00:36:46] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:36:46] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:36:46] [INFO] [pinger test] No virtual environment required
+[2024-12-30 00:36:46] [INFO] [pinger test] Checking for running instances...
+[2024-12-30 00:36:46] [DEBUG] [pinger test] Looking for direct command: C:\Servers\pinger test.py
+[2024-12-30 00:36:46] [INFO] [pinger test] No running instances found
+[2024-12-30 00:36:46] [INFO] [pinger test] Added to launch queue
+[2024-12-30 00:36:46] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:36:46] [INFO] [s01] No running instances found
+[2024-12-30 00:36:46] [INFO] [s01] Added to launch queue
+[2024-12-30 00:36:46] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:36:47] [INFO] [s02] No running instances found
+[2024-12-30 00:36:47] [INFO] [s02] Added to launch queue
+[2024-12-30 00:36:47] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:36:47] [INFO] [s03] No running instances found
+[2024-12-30 00:36:47] [INFO] [s03] Added to launch queue
+[2024-12-30 00:36:47] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:36:47] [INFO] [s04] No running instances found
+[2024-12-30 00:36:47] [INFO] [s04] Added to launch queue
+[2024-12-30 00:36:47] [INFO] [Launcher] Launching 6 server(s)...
+[2024-12-30 00:36:47] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:36:47] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:36:48] [INFO] [pinger test] Launching server window...
+[2024-12-30 00:36:48] [INFO] [pinger test] Launching with command: cmd.exe /c ping 1.1.1.1 -t
+[2024-12-30 00:36:48] [INFO] [s01] Launching server window...
+[2024-12-30 00:36:48] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:36:49] [INFO] [s02] Launching server window...
+[2024-12-30 00:36:49] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:36:49] [INFO] [s03] Launching server window...
+[2024-12-30 00:36:49] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:36:50] [INFO] [s04] Launching server window...
+[2024-12-30 00:36:50] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:37:09] [SUCCESS] [Config] Loaded 6 server configurations
+[2024-12-30 00:37:09] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:37:09] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:37:09] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:37:09] [DEBUG] [ollama-server] Looking for direct command: C:\Servers\ollama-server.py
+[2024-12-30 00:37:09] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:37:09] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:37:09] [INFO] [pinger test] No virtual environment required
+[2024-12-30 00:37:09] [INFO] [pinger test] Checking for running instances...
+[2024-12-30 00:37:09] [DEBUG] [pinger test] Looking for direct command: C:\Servers\pinger test.py
+[2024-12-30 00:37:10] [INFO] [pinger test] No running instances found
+[2024-12-30 00:37:10] [INFO] [pinger test] Added to launch queue
+[2024-12-30 00:37:10] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:37:10] [INFO] [s01] No running instances found
+[2024-12-30 00:37:10] [INFO] [s01] Added to launch queue
+[2024-12-30 00:37:10] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:37:10] [INFO] [s02] No running instances found
+[2024-12-30 00:37:10] [INFO] [s02] Added to launch queue
+[2024-12-30 00:37:10] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:37:10] [INFO] [s03] No running instances found
+[2024-12-30 00:37:10] [INFO] [s03] Added to launch queue
+[2024-12-30 00:37:10] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:37:10] [INFO] [s04] No running instances found
+[2024-12-30 00:37:10] [INFO] [s04] Added to launch queue
+[2024-12-30 00:37:10] [INFO] [Launcher] Launching 6 server(s)...
+[2024-12-30 00:37:10] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:37:10] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:37:11] [INFO] [pinger test] Launching server window...
+[2024-12-30 00:37:11] [INFO] [pinger test] Launching with command: cmd.exe /c ping 1.1.1.1 -t
+[2024-12-30 00:37:12] [INFO] [s01] Launching server window...
+[2024-12-30 00:37:12] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:37:12] [INFO] [s02] Launching server window...
+[2024-12-30 00:37:12] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:37:13] [INFO] [s03] Launching server window...
+[2024-12-30 00:37:13] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:37:14] [INFO] [s04] Launching server window...
+[2024-12-30 00:37:14] [INFO] [s04] Launching with command: python s04.py
