@@ -1,0 +1,102 @@
+{
+    "config": {
+        "logging": {
+            "enabled": true,
+            "directory": ".\\logs",
+            "filename": "py_win_server_launcher.log",
+            "maxLogSize": "10MB",
+            "maxLogFiles": 5
+        },
+        "terminal": {
+            "launchDelay": 500,
+            "titleLength": 22
+        },
+        "process": {
+            "gracefulShutdownTimeout": 5000,
+            "checkInterval": 1000
+        },
+        "defaults": {
+            "width": 80,
+            "height": 15,
+            "colorScheme": "Campbell Powershell"
+        },
+        "layouts": {
+            "twoByTwo": [
+                { "x": 10, "y": 10, "width": 80, "height": 15 },
+                { "x": 10, "y": 500, "width": 80, "height": 15 },
+                { "x": 900, "y": 10, "width": 80, "height": 15 },
+                { "x": 900, "y": 500, "width": 80, "height": 15 }
+            ],
+            "vertical": [
+                { "x": 0, "y": 0, "width": 80, "height": 15 },
+                { "x": 0, "y": 300, "width": 80, "height": 15 },
+                { "x": 0, "y": 600, "width": 80, "height": 15 },
+                { "x": 0, "y": 900, "width": 80, "height": 15 }
+            ],
+            "horizontal": [
+                { "x": 0, "y": 0, "width": 80, "height": 15 },
+                { "x": 600, "y": 0, "width": 80, "height": 15 },
+                { "x": 1200, "y": 0, "width": 80, "height": 15 },
+                { "x": 1800, "y": 0, "width": 80, "height": 15 }
+            ]
+        }
+    },
+    "servers": [
+        {
+            "serverName": "s01",
+            "homeFolder": "C:\\Servers\\s01",
+            "venvPath": "C:\\Servers\\venv_s01",
+            "startupCmd": "python s01.py",
+            "title": "Server 01",
+            "colorScheme": "Campbell Powershell",
+            "position": {
+                "x": 10,
+                "y": 10,
+                "width": 80,
+                "height": 15
+            }
+        },
+        {
+            "serverName": "s02",
+            "homeFolder": "C:\\Servers\\s02",
+            "venvPath": "C:\\Servers\\venv_s02",
+            "startupCmd": "python s02.py",
+            "title": "Server 02",
+            "colorScheme": "Solarized Light",
+            "position": {
+                "x": 10,
+                "y": 500,
+                "width": 80,
+                "height": 15
+            }
+        },
+        {
+            "serverName": "s03",
+            "homeFolder": "C:\\Servers\\s03",
+            "venvPath": "C:\\Servers\\venv_s03",
+            "startupCmd": "python s03.py",
+            "title": "Server 03",
+            "colorScheme": "Solarized Dark",
+            "position": {
+                "x": 900,
+                "y": 10,
+                "width": 80,
+                "height": 15
+            }
+        },
+        {
+            "serverName": "s04",
+            "homeFolder": "C:\\Servers\\s04",
+            "venvPath": "C:\\Servers\\venv_s04",
+            "startupCmd": "python s04.py",
+            "title": "Server 04",
+            "colorScheme": "One Half Dark",
+            "position": {
+                "x": 900,
+                "y": 500,
+                "width": 80,
+                "height": 15
+            }
+        }
+    ]
+}

@@ -1,0 +1,434 @@
+[2024-12-29 21:44:27] [SUCCESS] [Config] Loaded 4 server configurations
+[2024-12-29 21:44:27] [INFO] [Launcher] Starting server checks...
+[2024-12-29 21:44:28] [INFO] [s01] Checking for running instances...
+[2024-12-29 21:44:28] [INFO] [s01] Found 0 Python processes
+[2024-12-29 21:44:28] [INFO] [s01] No running instances found
+[2024-12-29 21:44:28] [INFO] [s01] Added to launch queue
+[2024-12-29 21:44:28] [INFO] [s02] Checking for running instances...
+[2024-12-29 21:44:28] [INFO] [s02] Found 0 Python processes
+[2024-12-29 21:44:28] [INFO] [s02] No running instances found
+[2024-12-29 21:44:28] [INFO] [s02] Added to launch queue
+[2024-12-29 21:44:28] [INFO] [s03] Checking for running instances...
+[2024-12-29 21:44:28] [INFO] [s03] Found 0 Python processes
+[2024-12-29 21:44:28] [INFO] [s03] No running instances found
+[2024-12-29 21:44:28] [INFO] [s03] Added to launch queue
+[2024-12-29 21:44:28] [INFO] [s04] Checking for running instances...
+[2024-12-29 21:44:28] [INFO] [s04] Found 0 Python processes
+[2024-12-29 21:44:28] [INFO] [s04] No running instances found
+[2024-12-29 21:44:28] [INFO] [s04] Added to launch queue
+[2024-12-29 21:44:28] [INFO] [Launcher] Launching 4 server(s)...
+[2024-12-29 21:44:28] [INFO] [s01] Launching server window...
+[2024-12-29 21:44:28] [INFO] [s01] Launching with command: python s01.py
+[2024-12-29 21:44:29] [INFO] [s02] Launching server window...
+[2024-12-29 21:44:29] [INFO] [s02] Launching with command: python s02.py
+[2024-12-29 21:44:29] [INFO] [s03] Launching server window...
+[2024-12-29 21:44:29] [INFO] [s03] Launching with command: python s03.py
+[2024-12-29 21:44:30] [INFO] [s04] Launching server window...
+[2024-12-29 21:44:30] [INFO] [s04] Launching with command: python s04.py
+[2024-12-29 21:44:35] [SUCCESS] [Config] Loaded 4 server configurations
+[2024-12-29 21:44:35] [INFO] [Launcher] Starting server checks...
+[2024-12-29 21:44:36] [INFO] [s01] Checking for running instances...
+[2024-12-29 21:44:36] [INFO] [s01] Found 8 Python processes
+[2024-12-29 21:44:36] [DEBUG] [s01] Python Process Details:
+  PID: 22680
+  Parent PID: 25448
+  Parent Process: powershell.exe
+  Command: "C:\Servers\venv_s01\Scripts\python.exe" s01.py
+[2024-12-29 21:44:36] [DEBUG] [s01] Python Process Details:
+  PID: 18136
+  Parent PID: 22680
+  Parent Process: python.exe
+  Command: "C:\Python\Python312\python.exe" s01.py
+[2024-12-29 21:44:36] [DEBUG] [s01] Python Process Details:
+  PID: 14916
+  Parent PID: 6416
+  Parent Process: powershell.exe
+  Command: "C:\Servers\venv_s02\Scripts\python.exe" s02.py
+[2024-12-29 21:44:36] [DEBUG] [s01] Python Process Details:
+  PID: 18540
+  Parent PID: 14916
+  Parent Process: python.exe
+  Command: "C:\Python\Python312\python.exe" s02.py
+[2024-12-29 21:44:36] [DEBUG] [s01] Python Process Details:
+  PID: 24612
+  Parent PID: 5112
+  Parent Process: powershell.exe
+  Command: "C:\Servers\venv_s03\Scripts\python.exe" s03.py
+[2024-12-29 21:44:36] [DEBUG] [s01] Python Process Details:
+  PID: 14884
+  Parent PID: 24612
+  Parent Process: python.exe
+  Command: "C:\Python\Python312\python.exe" s03.py
+[2024-12-29 21:44:36] [DEBUG] [s01] Python Process Details:
+  PID: 15012
+  Parent PID: 17940
+  Parent Process: powershell.exe
+  Command: "C:\Servers\venv_s04\Scripts\python.exe" s04.py
+[2024-12-29 21:44:36] [DEBUG] [s01] Python Process Details:
+  PID: 15892
+  Parent PID: 15012
+  Parent Process: python.exe
+  Command: "C:\Python\Python312\python.exe" s04.py
+[2024-12-29 21:44:39] [WARNING] [s01] Found 2 related Python processes
+[2024-12-29 21:44:39] [WARNING] [s01] Process Details:
+  PID: 22680
+  Parent PID: 25448
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.82 MB
+  Running Time: 00:00:08.0900347
+  Start Time: 12/29/2024 21:44:29
+  Command: "C:\Servers\venv_s01\Scripts\python.exe" s01.py
+[2024-12-29 21:44:39] [WARNING] [s01] Process Details:
+  PID: 18136
+  Parent PID: 22680
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.64 MB
+  Running Time: 00:00:09.1921309
+  Start Time: 12/29/2024 21:44:29
+  Command: "C:\Python\Python312\python.exe" s01.py
+[2024-12-29 21:44:51] [INFO] [s01] Stopping existing processes...
+[2024-12-29 21:44:51] [INFO] [s01] Attempting to stop process and cleanup for 22680...
+[2024-12-29 21:44:51] [SUCCESS] [s01] Killed Python process
+[2024-12-29 21:44:52] [SUCCESS] [s01] Killed PowerShell host process
+[2024-12-29 21:44:52] [INFO] [s01] Note: You can close the terminal tab with Ctrl+D
+[2024-12-29 21:44:52] [INFO] [s01] Added to launch queue
+[2024-12-29 21:44:52] [INFO] [s02] Checking for running instances...
+[2024-12-29 21:44:52] [INFO] [s02] Found 6 Python processes
+[2024-12-29 21:44:52] [DEBUG] [s02] Python Process Details:
+  PID: 14916
+  Parent PID: 6416
+  Parent Process: powershell.exe
+  Command: "C:\Servers\venv_s02\Scripts\python.exe" s02.py
+[2024-12-29 21:44:52] [DEBUG] [s02] Python Process Details:
+  PID: 18540
+  Parent PID: 14916
+  Parent Process: python.exe
+  Command: "C:\Python\Python312\python.exe" s02.py
+[2024-12-29 21:44:52] [DEBUG] [s02] Python Process Details:
+  PID: 24612
+  Parent PID: 5112
+  Parent Process: powershell.exe
+  Command: "C:\Servers\venv_s03\Scripts\python.exe" s03.py
+[2024-12-29 21:44:52] [DEBUG] [s02] Python Process Details:
+  PID: 14884
+  Parent PID: 24612
+  Parent Process: python.exe
+  Command: "C:\Python\Python312\python.exe" s03.py
+[2024-12-29 21:44:52] [DEBUG] [s02] Python Process Details:
+  PID: 15012
+  Parent PID: 17940
+  Parent Process: powershell.exe
+  Command: "C:\Servers\venv_s04\Scripts\python.exe" s04.py
+[2024-12-29 21:44:52] [DEBUG] [s02] Python Process Details:
+  PID: 15892
+  Parent PID: 15012
+  Parent Process: python.exe
+  Command: "C:\Python\Python312\python.exe" s04.py
+[2024-12-29 21:44:54] [WARNING] [s02] Found 2 related Python processes
+[2024-12-29 21:44:54] [WARNING] [s02] Process Details:
+  PID: 14916
+  Parent PID: 6416
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.82 MB
+  Running Time: 00:00:23.3289745
+  Start Time: 12/29/2024 21:44:30
+  Command: "C:\Servers\venv_s02\Scripts\python.exe" s02.py
+[2024-12-29 21:44:54] [WARNING] [s02] Process Details:
+  PID: 18540
+  Parent PID: 14916
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.65 MB
+  Running Time: 00:00:24.4353161
+  Start Time: 12/29/2024 21:44:30
+  Command: "C:\Python\Python312\python.exe" s02.py
+[2024-12-29 21:44:55] [INFO] [s02] Stopping existing processes...
+[2024-12-29 21:44:55] [INFO] [s02] Attempting to stop process and cleanup for 14916...
+[2024-12-29 21:44:55] [SUCCESS] [s02] Killed Python process
+[2024-12-29 21:44:56] [SUCCESS] [s02] Killed PowerShell host process
+[2024-12-29 21:44:56] [INFO] [s02] Note: You can close the terminal tab with Ctrl+D
+[2024-12-29 21:44:56] [INFO] [s02] Added to launch queue
+[2024-12-29 21:44:56] [INFO] [s03] Checking for running instances...
+[2024-12-29 21:44:56] [INFO] [s03] Found 4 Python processes
+[2024-12-29 21:44:56] [DEBUG] [s03] Python Process Details:
+  PID: 24612
+  Parent PID: 5112
+  Parent Process: powershell.exe
+  Command: "C:\Servers\venv_s03\Scripts\python.exe" s03.py
+[2024-12-29 21:44:56] [DEBUG] [s03] Python Process Details:
+  PID: 14884
+  Parent PID: 24612
+  Parent Process: python.exe
+  Command: "C:\Python\Python312\python.exe" s03.py
+[2024-12-29 21:44:56] [DEBUG] [s03] Python Process Details:
+  PID: 15012
+  Parent PID: 17940
+  Parent Process: powershell.exe
+  Command: "C:\Servers\venv_s04\Scripts\python.exe" s04.py
+[2024-12-29 21:44:56] [DEBUG] [s03] Python Process Details:
+  PID: 15892
+  Parent PID: 15012
+  Parent Process: python.exe
+  Command: "C:\Python\Python312\python.exe" s04.py
+[2024-12-29 21:44:58] [WARNING] [s03] Found 2 related Python processes
+[2024-12-29 21:44:58] [WARNING] [s03] Process Details:
+  PID: 24612
+  Parent PID: 5112
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.84 MB
+  Running Time: 00:00:26.6734014
+  Start Time: 12/29/2024 21:44:30
+  Command: "C:\Servers\venv_s03\Scripts\python.exe" s03.py
+[2024-12-29 21:44:58] [WARNING] [s03] Process Details:
+  PID: 14884
+  Parent PID: 24612
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.65 MB
+  Running Time: 00:00:27.7851856
+  Start Time: 12/29/2024 21:44:30
+  Command: "C:\Python\Python312\python.exe" s03.py
+[2024-12-29 21:44:59] [INFO] [s03] Stopping existing processes...
+[2024-12-29 21:44:59] [INFO] [s03] Attempting to stop process and cleanup for 24612...
+[2024-12-29 21:44:59] [SUCCESS] [s03] Killed Python process
+[2024-12-29 21:44:59] [SUCCESS] [s03] Killed PowerShell host process
+[2024-12-29 21:44:59] [INFO] [s03] Note: You can close the terminal tab with Ctrl+D
+[2024-12-29 21:44:59] [INFO] [s03] Added to launch queue
+[2024-12-29 21:44:59] [INFO] [s04] Checking for running instances...
+[2024-12-29 21:45:00] [INFO] [s04] Found 2 Python processes
+[2024-12-29 21:45:00] [DEBUG] [s04] Python Process Details:
+  PID: 15012
+  Parent PID: 17940
+  Parent Process: powershell.exe
+  Command: "C:\Servers\venv_s04\Scripts\python.exe" s04.py
+[2024-12-29 21:45:00] [DEBUG] [s04] Python Process Details:
+  PID: 15892
+  Parent PID: 15012
+  Parent Process: python.exe
+  Command: "C:\Python\Python312\python.exe" s04.py
+[2024-12-29 21:45:02] [WARNING] [s04] Found 2 related Python processes
+[2024-12-29 21:45:02] [WARNING] [s04] Process Details:
+  PID: 15012
+  Parent PID: 17940
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.82 MB
+  Running Time: 00:00:29.7998736
+  Start Time: 12/29/2024 21:44:31
+  Command: "C:\Servers\venv_s04\Scripts\python.exe" s04.py
+[2024-12-29 21:45:02] [WARNING] [s04] Process Details:
+  PID: 15892
+  Parent PID: 15012
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.64 MB
+  Running Time: 00:00:30.9048092
+  Start Time: 12/29/2024 21:44:31
+  Command: "C:\Python\Python312\python.exe" s04.py
+[2024-12-29 21:45:03] [INFO] [s04] Stopping existing processes...
+[2024-12-29 21:45:03] [INFO] [s04] Attempting to stop process and cleanup for 15012...
+[2024-12-29 21:45:03] [SUCCESS] [s04] Killed Python process
+[2024-12-29 21:45:03] [SUCCESS] [s04] Killed PowerShell host process
+[2024-12-29 21:45:03] [INFO] [s04] Note: You can close the terminal tab with Ctrl+D
+[2024-12-29 21:45:03] [INFO] [s04] Added to launch queue
+[2024-12-29 21:45:03] [INFO] [Launcher] Launching 4 server(s)...
+[2024-12-29 21:45:03] [INFO] [s01] Launching server window...
+[2024-12-29 21:45:03] [INFO] [s01] Launching with command: python s01.py
+[2024-12-29 21:45:04] [INFO] [s02] Launching server window...
+[2024-12-29 21:45:04] [INFO] [s02] Launching with command: python s02.py
+[2024-12-29 21:45:04] [INFO] [s03] Launching server window...
+[2024-12-29 21:45:04] [INFO] [s03] Launching with command: python s03.py
+[2024-12-29 21:45:05] [INFO] [s04] Launching server window...
+[2024-12-29 21:45:05] [INFO] [s04] Launching with command: python s04.py
+[2024-12-29 21:45:28] [ERROR] [Launcher] Error in launcher: Error loading configurations: Configuration file not found: --help
+[2024-12-29 21:45:28] [ERROR] [Launcher] Stack Trace: at Get-ServerConfigs, C:\Users\mgua\py_win_server_launcher\py_win_server_launcher.ps1: line 214
+at Start-ServerLauncher, C:\Users\mgua\py_win_server_launcher\py_win_server_launcher.ps1: line 686
+at <ScriptBlock>, C:\Users\mgua\py_win_server_launcher\py_win_server_launcher.ps1: line 731
+at <ScriptBlock>, <No file>: line 1
+[2024-12-29 21:54:14] [SUCCESS] [Config] Loaded 4 server configurations
+[2024-12-29 21:54:14] [INFO] [Launcher] Starting server checks...
+[2024-12-29 21:54:14] [INFO] [s01] Checking for running instances...
+[2024-12-29 21:54:14] [INFO] [s01] Found 0 Python processes
+[2024-12-29 21:54:14] [INFO] [s01] No running instances found
+[2024-12-29 21:54:14] [INFO] [s01] Added to launch queue
+[2024-12-29 21:54:14] [INFO] [s02] Checking for running instances...
+[2024-12-29 21:54:15] [INFO] [s02] Found 0 Python processes
+[2024-12-29 21:54:15] [INFO] [s02] No running instances found
+[2024-12-29 21:54:15] [INFO] [s02] Added to launch queue
+[2024-12-29 21:54:15] [INFO] [s03] Checking for running instances...
+[2024-12-29 21:54:15] [INFO] [s03] Found 0 Python processes
+[2024-12-29 21:54:15] [INFO] [s03] No running instances found
+[2024-12-29 21:54:15] [INFO] [s03] Added to launch queue
+[2024-12-29 21:54:15] [INFO] [s04] Checking for running instances...
+[2024-12-29 21:54:15] [INFO] [s04] Found 0 Python processes
+[2024-12-29 21:54:15] [INFO] [s04] No running instances found
+[2024-12-29 21:54:15] [INFO] [s04] Added to launch queue
+[2024-12-29 21:54:15] [INFO] [Launcher] Launching 4 server(s)...
+[2024-12-29 21:54:15] [INFO] [s01] Launching server window...
+[2024-12-29 21:54:15] [INFO] [s01] Launching with command: python s01.py
+[2024-12-29 21:54:15] [INFO] [s02] Launching server window...
+[2024-12-29 21:54:15] [INFO] [s02] Launching with command: python s02.py
+[2024-12-29 21:54:16] [INFO] [s03] Launching server window...
+[2024-12-29 21:54:16] [INFO] [s03] Launching with command: python s03.py
+[2024-12-29 21:54:17] [INFO] [s04] Launching server window...
+[2024-12-29 21:54:17] [INFO] [s04] Launching with command: python s04.py
+[2024-12-29 21:54:26] [SUCCESS] [Config] Loaded 4 server configurations
+[2024-12-29 21:54:26] [INFO] [Launcher] Starting server checks...
+[2024-12-29 21:54:26] [INFO] [s01] Checking for running instances...
+[2024-12-29 21:54:27] [INFO] [s01] Found 6 Python processes
+[2024-12-29 21:54:27] [DEBUG] [s01] Python Process Details:
+  PID: 22596
+  Parent PID: 12700
+  Parent Process: powershell.exe
+  Command: "C:\Servers\venv_s01\Scripts\python.exe" s01.py
+[2024-12-29 21:54:27] [DEBUG] [s01] Python Process Details:
+  PID: 7364
+  Parent PID: 22596
+  Parent Process: python.exe
+  Command: "C:\Python\Python312\python.exe" s01.py
+[2024-12-29 21:54:27] [DEBUG] [s01] Python Process Details:
+  PID: 19328
+  Parent PID: 21816
+  Parent Process: powershell.exe
+  Command: "C:\Servers\venv_s02\Scripts\python.exe" s02.py
+[2024-12-29 21:54:27] [DEBUG] [s01] Python Process Details:
+  PID: 19200
+  Parent PID: 19328
+  Parent Process: python.exe
+  Command: "C:\Python\Python312\python.exe" s02.py
+[2024-12-29 21:54:27] [DEBUG] [s01] Python Process Details:
+  PID: 23880
+  Parent PID: 20912
+  Parent Process: powershell.exe
+  Command: "C:\Servers\venv_s03\Scripts\python.exe" s03.py
+[2024-12-29 21:54:27] [DEBUG] [s01] Python Process Details:
+  PID: 22132
+  Parent PID: 23880
+  Parent Process: python.exe
+  Command: "C:\Python\Python312\python.exe" s03.py
+[2024-12-29 21:54:29] [WARNING] [s01] Found 2 related Python processes
+[2024-12-29 21:54:29] [WARNING] [s01] Process Details:
+  PID: 22596
+  Parent PID: 12700
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.82 MB
+  Running Time: 00:00:12.0678358
+  Start Time: 12/29/2024 21:54:16
+  Command: "C:\Servers\venv_s01\Scripts\python.exe" s01.py
+[2024-12-29 21:54:29] [WARNING] [s01] Process Details:
+  PID: 7364
+  Parent PID: 22596
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.63 MB
+  Running Time: 00:00:13.1783998
+  Start Time: 12/29/2024 21:54:16
+  Command: "C:\Python\Python312\python.exe" s01.py
+[2024-12-29 21:54:32] [INFO] [s01] Stopping existing processes...
+[2024-12-29 21:54:32] [INFO] [s01] Attempting to stop process and cleanup for 22596...
+[2024-12-29 21:54:32] [SUCCESS] [s01] Killed Python process
+[2024-12-29 21:54:32] [SUCCESS] [s01] Killed PowerShell host process
+[2024-12-29 21:54:32] [INFO] [s01] Note: You can close the terminal tab with Ctrl+D
+[2024-12-29 21:54:32] [INFO] [s01] Added to launch queue
+[2024-12-29 21:54:32] [INFO] [s02] Checking for running instances...
+[2024-12-29 21:54:33] [INFO] [s02] Found 4 Python processes
+[2024-12-29 21:54:33] [DEBUG] [s02] Python Process Details:
+  PID: 19328
+  Parent PID: 21816
+  Parent Process: powershell.exe
+  Command: "C:\Servers\venv_s02\Scripts\python.exe" s02.py
+[2024-12-29 21:54:33] [DEBUG] [s02] Python Process Details:
+  PID: 19200
+  Parent PID: 19328
+  Parent Process: python.exe
+  Command: "C:\Python\Python312\python.exe" s02.py
+[2024-12-29 21:54:33] [DEBUG] [s02] Python Process Details:
+  PID: 23880
+  Parent PID: 20912
+  Parent Process: powershell.exe
+  Command: "C:\Servers\venv_s03\Scripts\python.exe" s03.py
+[2024-12-29 21:54:33] [DEBUG] [s02] Python Process Details:
+  PID: 22132
+  Parent PID: 23880
+  Parent Process: python.exe
+  Command: "C:\Python\Python312\python.exe" s03.py
+[2024-12-29 21:54:35] [WARNING] [s02] Found 2 related Python processes
+[2024-12-29 21:54:35] [WARNING] [s02] Process Details:
+  PID: 19328
+  Parent PID: 21816
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.82 MB
+  Running Time: 00:00:17.5353382
+  Start Time: 12/29/2024 21:54:16
+  Command: "C:\Servers\venv_s02\Scripts\python.exe" s02.py
+[2024-12-29 21:54:35] [WARNING] [s02] Process Details:
+  PID: 19200
+  Parent PID: 19328
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.64 MB
+  Running Time: 00:00:18.6469247
+  Start Time: 12/29/2024 21:54:16
+  Command: "C:\Python\Python312\python.exe" s02.py
+[2024-12-29 21:54:36] [INFO] [s02] Stopping existing processes...
+[2024-12-29 21:54:36] [INFO] [s02] Attempting to stop process and cleanup for 19328...
+[2024-12-29 21:54:36] [SUCCESS] [s02] Killed Python process
+[2024-12-29 21:54:36] [SUCCESS] [s02] Killed PowerShell host process
+[2024-12-29 21:54:36] [INFO] [s02] Note: You can close the terminal tab with Ctrl+D
+[2024-12-29 21:54:36] [INFO] [s02] Added to launch queue
+[2024-12-29 21:54:36] [INFO] [s03] Checking for running instances...
+[2024-12-29 21:54:37] [INFO] [s03] Found 2 Python processes
+[2024-12-29 21:54:37] [DEBUG] [s03] Python Process Details:
+  PID: 23880
+  Parent PID: 20912
+  Parent Process: powershell.exe
+  Command: "C:\Servers\venv_s03\Scripts\python.exe" s03.py
+[2024-12-29 21:54:37] [DEBUG] [s03] Python Process Details:
+  PID: 22132
+  Parent PID: 23880
+  Parent Process: python.exe
+  Command: "C:\Python\Python312\python.exe" s03.py
+[2024-12-29 21:54:39] [WARNING] [s03] Found 2 related Python processes
+[2024-12-29 21:54:39] [WARNING] [s03] Process Details:
+  PID: 23880
+  Parent PID: 20912
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.82 MB
+  Running Time: 00:00:20.6911034
+  Start Time: 12/29/2024 21:54:17
+  Command: "C:\Servers\venv_s03\Scripts\python.exe" s03.py
+[2024-12-29 21:54:39] [WARNING] [s03] Process Details:
+  PID: 22132
+  Parent PID: 23880
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.63 MB
+  Running Time: 00:00:21.7729913
+  Start Time: 12/29/2024 21:54:17
+  Command: "C:\Python\Python312\python.exe" s03.py
+[2024-12-29 21:54:40] [INFO] [s03] Stopping existing processes...
+[2024-12-29 21:54:40] [INFO] [s03] Attempting to stop process and cleanup for 23880...
+[2024-12-29 21:54:40] [SUCCESS] [s03] Killed Python process
+[2024-12-29 21:54:40] [SUCCESS] [s03] Killed PowerShell host process
+[2024-12-29 21:54:40] [INFO] [s03] Note: You can close the terminal tab with Ctrl+D
+[2024-12-29 21:54:40] [INFO] [s03] Added to launch queue
+[2024-12-29 21:54:40] [INFO] [s04] Checking for running instances...
+[2024-12-29 21:54:40] [INFO] [s04] Found 0 Python processes
+[2024-12-29 21:54:40] [INFO] [s04] No running instances found
+[2024-12-29 21:54:40] [INFO] [s04] Added to launch queue
+[2024-12-29 21:54:40] [INFO] [Launcher] Launching 4 server(s)...
+[2024-12-29 21:54:40] [INFO] [s01] Launching server window...
+[2024-12-29 21:54:40] [INFO] [s01] Launching with command: python s01.py
+[2024-12-29 21:54:41] [INFO] [s02] Launching server window...
+[2024-12-29 21:54:41] [INFO] [s02] Launching with command: python s02.py
+[2024-12-29 21:54:41] [INFO] [s03] Launching server window...
+[2024-12-29 21:54:41] [INFO] [s03] Launching with command: python s03.py
+[2024-12-29 21:54:42] [INFO] [s04] Launching server window...
+[2024-12-29 21:54:42] [INFO] [s04] Launching with command: python s04.py
