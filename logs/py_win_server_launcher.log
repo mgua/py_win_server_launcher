@@ -1788,3 +1788,23 @@ at <ScriptBlock>, <No file>: line 1
 [2024-12-30 01:05:05] [INFO] [s03] Launching with command: python s03.py
 [2024-12-30 01:05:06] [INFO] [s04] Launching server window...
 [2024-12-30 01:05:06] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 18:25:23] [SUCCESS] [Config] Loaded 7 server configurations
+[2024-12-30 18:25:23] [INFO] [Launcher] Starting server checks...
+[2024-12-30 18:25:23] [ERROR] [ollama-server] Server directory not found: C:\Servers
+[2024-12-30 18:25:23] [ERROR] [pinger test cmd] Server directory not found: C:\Servers
+[2024-12-30 18:25:23] [ERROR] [pinger test powershell] Server directory not found: C:\Servers
+[2024-12-30 18:25:23] [ERROR] [s01] Server directory not found: C:\Servers\s01
+[2024-12-30 18:25:23] [ERROR] [s02] Server directory not found: C:\Servers\s02
+[2024-12-30 18:25:23] [ERROR] [s03] Server directory not found: C:\Servers\s03
+[2024-12-30 18:25:23] [ERROR] [s04] Server directory not found: C:\Servers\s04
+[2024-12-30 18:25:23] [INFO] [Launcher] No servers to launch. All servers are either running or launch was cancelled.
+[2024-12-30 18:25:47] [SUCCESS] [Config] Loaded 7 server configurations
+[2024-12-30 18:25:47] [INFO] [Launcher] Starting server checks...
+[2024-12-30 18:25:47] [ERROR] [ollama-server] Server directory not found: C:\Servers
+[2024-12-30 18:25:47] [ERROR] [pinger test cmd] Server directory not found: C:\Servers
+[2024-12-30 18:25:47] [ERROR] [pinger test powershell] Server directory not found: C:\Servers
+[2024-12-30 18:25:47] [ERROR] [s01] Server directory not found: C:\Servers\s01
+[2024-12-30 18:25:47] [ERROR] [s02] Server directory not found: C:\Servers\s02
+[2024-12-30 18:25:47] [ERROR] [s03] Server directory not found: C:\Servers\s03
+[2024-12-30 18:25:47] [ERROR] [s04] Server directory not found: C:\Servers\s04
+[2024-12-30 18:25:47] [INFO] [Launcher] No servers to launch. All servers are either running or launch was cancelled.
