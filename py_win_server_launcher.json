@@ -83,7 +83,7 @@
             "id": "ping-google",
             "title": "google Ping Test",
             "description": "Continuous ping to google DNS for connectivity monitoring",
-            "active": true,
+            "active": false,
             "type": "command",
             "shell": "cmd",
             "command": "ping 8.8.8.8 -t",
@@ -117,6 +117,25 @@
                 }
             }
         },
+		{
+            "id": "mail_processor",
+            "title": "mail_processor (only wizwks01)",
+            "description": "performs email retrieval and answers, from the same webassistant venv",
+            "active": true,
+            "type": "python",
+            "command": "./email_engine_g2/process_emails4.py",
+            "workingDir": "d:\\sw\\ollama_web_assistant",
+            "venv": "d:\\sw\\venv_ollama_web_assistant",
+            "display": {
+                "colorScheme": "Solarized Dark",
+                "position": {
+                    "x": 20,
+                    "y": 600,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },		
         {
             "id": "gufo_server",
             "title": "gufo frontend",
