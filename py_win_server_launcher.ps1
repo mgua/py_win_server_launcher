@@ -372,81 +372,76 @@ function Stop-ServerProcess {
         $wmiProcess = Get-WmiObject Win32_Process -Filter "ProcessId = $($process.Id)"
         Write-ServerLog -ServerName $serverName -Message "Main process is: $($wmiProcess.Name)" -Type "DEBUG"
         
-        # If this is a shell process (cmd.exe or powershell.exe)
-        if ($wmiProcess.Name -in @("cmd.exe", "powershell.exe")) {
-            # Get all child processes recursively
-            $childrenToKill = Get-WmiObject Win32_Process | Where-Object { 
-                $parentChain = @()
-                $currentId = $_.ProcessId
-                $parentId = $_.ParentProcessId
-                
-                while ($parentId -ne 0) {
-                    if ($parentId -eq $process.Id) {
-                        return $true
-                    }
-                    $parentChain += $parentId
-                    $parent = Get-WmiObject Win32_Process -Filter "ProcessId = $parentId" -ErrorAction SilentlyContinue
-                    if (-not $parent) { break }
-                    $currentId = $parentId
-                    $parentId = $parent.ParentProcessId
-                }
-                return $false
+        $success = $true
+        
+        # Kill any child processes first
+        Get-WmiObject Win32_Process | Where-Object { $_.ParentProcessId -eq $process.Id } | ForEach-Object {
+            try {
+                Write-ServerLog -ServerName $serverName -Message "Killing child process: $($_.ProcessId) ($($_.Name))" -Type "DEBUG"
+                Stop-Process -Id $_.ProcessId -Force -ErrorAction Stop
+                Write-ServerLog -ServerName $serverName -Message "Killed child process" -Type "SUCCESS"
             }
-            
-            # Kill child processes from leaf to root
-            foreach ($childProc in $childrenToKill) {
-                try {
-                    Write-ServerLog -ServerName $serverName -Message "Attempting to kill child process: $($childProc.ProcessId) ($($childProc.Name))" -Type "DEBUG"
-                    $child = Get-Process -Id $childProc.ProcessId -ErrorAction SilentlyContinue
-                    if ($child) {
-                        $child.Kill()
-                        Write-ServerLog -ServerName $serverName -Message "Killed child process $($childProc.ProcessId) ($($childProc.Name))" -Type "SUCCESS"
-                    }
-                }
-                catch {
-                    Write-ServerLog -ServerName $serverName -Message "Error killing child process $($childProc.ProcessId): $_" -Type "WARNING"
-                }
+            catch {
+                Write-ServerLog -ServerName $serverName -Message "Trying taskkill for child process..." -Type "DEBUG"
+                taskkill /PID $_.ProcessId /F 2>$null
             }
         }
+        
+        # Small delay to ensure child processes are gone
+        Start-Sleep -Milliseconds 100
         
         # Kill the main process
         if (-not $process.HasExited) {
             Write-ServerLog -ServerName $serverName -Message "Killing main process $($process.Id)" -Type "DEBUG"
-            $process.Kill()
-            Write-ServerLog -ServerName $serverName -Message "Killed main process" -Type "SUCCESS"
-        }
-        
-        # Find and kill the PowerShell host process from our launcher
-        $psProcesses = Get-WmiObject Win32_Process | 
-            Where-Object { 
-                $_.Name -eq "powershell.exe" -and 
-                $_.CommandLine -like "*ServerLauncher_$serverName\start_$serverName.ps1*" 
-            }
-        
-        foreach ($ps in $psProcesses) {
             try {
-                $psProcess = Get-Process -Id $ps.ProcessId -ErrorAction SilentlyContinue
-                if ($psProcess) {
-                    Write-ServerLog -ServerName $serverName -Message "Killing launcher PowerShell process $($ps.ProcessId)" -Type "DEBUG"
-                    $psProcess.Kill()
-                    Write-ServerLog -ServerName $serverName -Message "Killed PowerShell host process" -Type "SUCCESS"
-                    Write-ServerLog -ServerName $serverName -Message "Note: You can close the terminal tab with Ctrl+D" -Type "INFO"
-                }
+                $process.Kill()
+                Write-ServerLog -ServerName $serverName -Message "Killed main process" -Type "SUCCESS"
             }
             catch {
-                Write-ServerLog -ServerName $serverName -Message "Error killing PowerShell: $_" -Type "WARNING"
+                Write-ServerLog -ServerName $serverName -Message "Trying taskkill for main process..." -Type "DEBUG"
+                taskkill /PID $process.Id /F /T 2>$null
             }
         }
         
+        # Find all related PowerShell processes
+        $psProcessIds = @()
+        
+        # Add launcher script process
+        $launcherPs = Get-WmiObject Win32_Process | Where-Object { 
+            $_.Name -eq "powershell.exe" -and 
+            $_.CommandLine -like "*ServerLauncher_$serverName\start_$serverName.ps1*"
+        }
+        $psProcessIds += $launcherPs | Select-Object -ExpandProperty ProcessId
+        
+        # Add parent PowerShell process
+        $parentPs = Get-WmiObject Win32_Process | Where-Object {
+            $_.Name -eq "powershell.exe" -and
+            $_.ProcessId -eq $wmiProcess.ParentProcessId
+        }
+        $psProcessIds += $parentPs | Select-Object -ExpandProperty ProcessId
+        
+        # Remove duplicates and kill each process
+        $psProcessIds = $psProcessIds | Select-Object -Unique
+        foreach ($psId in $psProcessIds) {
+            try {
+                Write-ServerLog -ServerName $serverName -Message "Killing PowerShell process $psId" -Type "DEBUG"
+                Stop-Process -Id $psId -Force -ErrorAction Stop
+                Write-ServerLog -ServerName $serverName -Message "Killed PowerShell process" -Type "SUCCESS"
+            }
+            catch {
+                Write-ServerLog -ServerName $serverName -Message "Trying taskkill for PowerShell process..." -Type "DEBUG"
+                taskkill /PID $psId /F 2>$null
+            }
+        }
+        
+        Write-ServerLog -ServerName $serverName -Message "Note: You can close the terminal tab with Ctrl+D" -Type "INFO"
         return $true
     }
     catch {
-        Write-ServerLog -ServerName $serverName -Message "Failed to stop process: $_" -Type "ERROR"
+        Write-ServerLog -ServerName $serverName -Message "Unexpected error in process cleanup: $_" -Type "ERROR"
         return $false
     }
 }
-
-
 
 
 
@@ -841,7 +836,14 @@ function Start-ServerProcessManagement {
         [hashtable]$config
     )
     
-    $scriptPath = Join-Path $config.HomeFolder "$($config.ServerName).py"
+    # Get the correct script path or command
+    $scriptPath = if ($config.VenvPath -eq "not_needed") {
+        $config.StartupCmd  # Use the full command for non-Python servers
+    }
+    else {
+        Join-Path $config.HomeFolder "$($config.ServerName).py"  # Use .py file path for Python servers
+    }
+    
     $keepChecking = $true
     
     while ($keepChecking) {
@@ -880,6 +882,10 @@ function Start-ServerProcessManagement {
         }
     }
 }
+
+
+
+
 
 # Function to stop existing processes
 function Stop-ExistingProcesses {

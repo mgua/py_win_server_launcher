@@ -1212,3 +1212,579 @@ at <ScriptBlock>, <No file>: line 1
 [2024-12-30 00:37:13] [INFO] [s03] Launching with command: python s03.py
 [2024-12-30 00:37:14] [INFO] [s04] Launching server window...
 [2024-12-30 00:37:14] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:43:25] [SUCCESS] [Config] Loaded 7 server configurations
+[2024-12-30 00:43:25] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:43:25] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:43:25] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:43:25] [DEBUG] [ollama-server] Looking for direct command: C:\Servers\ollama-server.py
+[2024-12-30 00:43:25] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:43:25] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:43:25] [INFO] [pinger test cmd] No virtual environment required
+[2024-12-30 00:43:25] [INFO] [pinger test cmd] Checking for running instances...
+[2024-12-30 00:43:25] [DEBUG] [pinger test cmd] Looking for direct command: C:\Servers\pinger test cmd.py
+[2024-12-30 00:43:26] [INFO] [pinger test cmd] No running instances found
+[2024-12-30 00:43:26] [INFO] [pinger test cmd] Added to launch queue
+[2024-12-30 00:43:26] [INFO] [pinger test powershell] No virtual environment required
+[2024-12-30 00:43:26] [INFO] [pinger test powershell] Checking for running instances...
+[2024-12-30 00:43:26] [DEBUG] [pinger test powershell] Looking for direct command: C:\Servers\pinger test powershell.py
+[2024-12-30 00:43:26] [INFO] [pinger test powershell] No running instances found
+[2024-12-30 00:43:26] [INFO] [pinger test powershell] Added to launch queue
+[2024-12-30 00:43:26] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:43:26] [INFO] [s01] No running instances found
+[2024-12-30 00:43:26] [INFO] [s01] Added to launch queue
+[2024-12-30 00:43:26] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:43:26] [INFO] [s02] No running instances found
+[2024-12-30 00:43:26] [INFO] [s02] Added to launch queue
+[2024-12-30 00:43:26] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:43:26] [INFO] [s03] No running instances found
+[2024-12-30 00:43:26] [INFO] [s03] Added to launch queue
+[2024-12-30 00:43:26] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:43:26] [INFO] [s04] No running instances found
+[2024-12-30 00:43:26] [INFO] [s04] Added to launch queue
+[2024-12-30 00:43:26] [INFO] [Launcher] Launching 7 server(s)...
+[2024-12-30 00:43:26] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:43:26] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:43:27] [INFO] [pinger test cmd] Launching server window...
+[2024-12-30 00:43:27] [INFO] [pinger test cmd] Launching with command: cmd.exe /c ping 1.1.1.1 -t
+[2024-12-30 00:43:28] [INFO] [pinger test powershell] Launching server window...
+[2024-12-30 00:43:28] [INFO] [pinger test powershell] Launching with command: powershell -Command ping 8.8.8.8 -t
+[2024-12-30 00:43:28] [INFO] [s01] Launching server window...
+[2024-12-30 00:43:28] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:43:29] [INFO] [s02] Launching server window...
+[2024-12-30 00:43:29] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:43:30] [INFO] [s03] Launching server window...
+[2024-12-30 00:43:30] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:43:30] [INFO] [s04] Launching server window...
+[2024-12-30 00:43:30] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:43:58] [SUCCESS] [Config] Loaded 7 server configurations
+[2024-12-30 00:43:58] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:43:58] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:43:58] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:43:58] [DEBUG] [ollama-server] Looking for direct command: C:\Servers\ollama-server.py
+[2024-12-30 00:43:58] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:43:58] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:43:58] [INFO] [pinger test cmd] No virtual environment required
+[2024-12-30 00:43:58] [INFO] [pinger test cmd] Checking for running instances...
+[2024-12-30 00:43:58] [DEBUG] [pinger test cmd] Looking for direct command: C:\Servers\pinger test cmd.py
+[2024-12-30 00:43:58] [INFO] [pinger test cmd] No running instances found
+[2024-12-30 00:43:58] [INFO] [pinger test cmd] Added to launch queue
+[2024-12-30 00:43:58] [INFO] [pinger test powershell] No virtual environment required
+[2024-12-30 00:43:58] [INFO] [pinger test powershell] Checking for running instances...
+[2024-12-30 00:43:58] [DEBUG] [pinger test powershell] Looking for direct command: C:\Servers\pinger test powershell.py
+[2024-12-30 00:43:58] [INFO] [pinger test powershell] No running instances found
+[2024-12-30 00:43:58] [INFO] [pinger test powershell] Added to launch queue
+[2024-12-30 00:43:58] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:43:59] [INFO] [s01] No running instances found
+[2024-12-30 00:43:59] [INFO] [s01] Added to launch queue
+[2024-12-30 00:43:59] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:43:59] [INFO] [s02] No running instances found
+[2024-12-30 00:43:59] [INFO] [s02] Added to launch queue
+[2024-12-30 00:43:59] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:43:59] [INFO] [s03] No running instances found
+[2024-12-30 00:43:59] [INFO] [s03] Added to launch queue
+[2024-12-30 00:43:59] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:43:59] [INFO] [s04] No running instances found
+[2024-12-30 00:43:59] [INFO] [s04] Added to launch queue
+[2024-12-30 00:43:59] [INFO] [Launcher] Launching 7 server(s)...
+[2024-12-30 00:43:59] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:43:59] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:44:00] [INFO] [pinger test cmd] Launching server window...
+[2024-12-30 00:44:00] [INFO] [pinger test cmd] Launching with command: cmd.exe /c ping 1.1.1.1 -t
+[2024-12-30 00:44:00] [INFO] [pinger test powershell] Launching server window...
+[2024-12-30 00:44:01] [INFO] [pinger test powershell] Launching with command: powershell -Command ping 8.8.8.8 -t
+[2024-12-30 00:44:01] [INFO] [s01] Launching server window...
+[2024-12-30 00:44:01] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:44:02] [INFO] [s02] Launching server window...
+[2024-12-30 00:44:02] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:44:02] [INFO] [s03] Launching server window...
+[2024-12-30 00:44:02] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:44:03] [INFO] [s04] Launching server window...
+[2024-12-30 00:44:03] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:46:54] [SUCCESS] [Config] Loaded 7 server configurations
+[2024-12-30 00:46:54] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:46:54] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:46:54] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:46:54] [DEBUG] [ollama-server] Looking for direct command: ollama serve
+[2024-12-30 00:46:54] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:46:54] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:46:54] [INFO] [pinger test cmd] No virtual environment required
+[2024-12-30 00:46:54] [INFO] [pinger test cmd] Checking for running instances...
+[2024-12-30 00:46:54] [DEBUG] [pinger test cmd] Looking for cmd command: ping 1.1.1.1 -t
+[2024-12-30 00:46:54] [INFO] [pinger test cmd] No running instances found
+[2024-12-30 00:46:54] [INFO] [pinger test cmd] Added to launch queue
+[2024-12-30 00:46:54] [INFO] [pinger test powershell] No virtual environment required
+[2024-12-30 00:46:54] [INFO] [pinger test powershell] Checking for running instances...
+[2024-12-30 00:46:54] [DEBUG] [pinger test powershell] Looking for direct command: powershell -Command ping 8.8.8.8 -t
+[2024-12-30 00:46:54] [INFO] [pinger test powershell] No running instances found
+[2024-12-30 00:46:54] [INFO] [pinger test powershell] Added to launch queue
+[2024-12-30 00:46:54] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:46:54] [INFO] [s01] No running instances found
+[2024-12-30 00:46:54] [INFO] [s01] Added to launch queue
+[2024-12-30 00:46:54] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:46:55] [INFO] [s02] No running instances found
+[2024-12-30 00:46:55] [INFO] [s02] Added to launch queue
+[2024-12-30 00:46:55] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:46:55] [INFO] [s03] No running instances found
+[2024-12-30 00:46:55] [INFO] [s03] Added to launch queue
+[2024-12-30 00:46:55] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:46:55] [INFO] [s04] No running instances found
+[2024-12-30 00:46:55] [INFO] [s04] Added to launch queue
+[2024-12-30 00:46:55] [INFO] [Launcher] Launching 7 server(s)...
+[2024-12-30 00:46:55] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:46:55] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:46:56] [INFO] [pinger test cmd] Launching server window...
+[2024-12-30 00:46:56] [INFO] [pinger test cmd] Launching with command: cmd.exe /c ping 1.1.1.1 -t
+[2024-12-30 00:46:56] [INFO] [pinger test powershell] Launching server window...
+[2024-12-30 00:46:56] [INFO] [pinger test powershell] Launching with command: powershell -Command ping 8.8.8.8 -t
+[2024-12-30 00:46:57] [INFO] [s01] Launching server window...
+[2024-12-30 00:46:57] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:46:57] [INFO] [s02] Launching server window...
+[2024-12-30 00:46:57] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:46:58] [INFO] [s03] Launching server window...
+[2024-12-30 00:46:58] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:46:59] [INFO] [s04] Launching server window...
+[2024-12-30 00:46:59] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:47:16] [SUCCESS] [Config] Loaded 7 server configurations
+[2024-12-30 00:47:16] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:47:16] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:47:16] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:47:16] [DEBUG] [ollama-server] Looking for direct command: ollama serve
+[2024-12-30 00:47:16] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:47:16] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:47:16] [INFO] [pinger test cmd] No virtual environment required
+[2024-12-30 00:47:16] [INFO] [pinger test cmd] Checking for running instances...
+[2024-12-30 00:47:16] [DEBUG] [pinger test cmd] Looking for cmd command: ping 1.1.1.1 -t
+[2024-12-30 00:47:18] [DEBUG] [pinger test cmd] Found cmd process with children:
+[2024-12-30 00:47:18] [DEBUG] [pinger test cmd] Child process: 5724 - PING.EXE
+[2024-12-30 00:47:18] [WARNING] [pinger test cmd] Found 1 related processes
+[2024-12-30 00:47:18] [WARNING] [pinger test cmd] Process Details:
+  PID: 22248 (cmd process)
+  Parent PID: 17052
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 4.45 MB
+  Running Time: 00:00:21.1779520
+  Start Time: 12/30/2024 00:46:56
+  Command: "C:\WINDOWS\system32\cmd.exe" /c ping 1.1.1.1 -t
+[2024-12-30 00:47:18] [DEBUG] [pinger test cmd]   Child Process: 5724 - PING.EXE
+[2024-12-30 00:47:23] [INFO] [pinger test cmd] Stopping existing processes...
+[2024-12-30 00:47:23] [INFO] [pinger test cmd] Attempting to stop process and cleanup for 22248...
+[2024-12-30 00:47:23] [DEBUG] [pinger test cmd] Main process is: cmd.exe
+[2024-12-30 00:48:28] [DEBUG] [pinger test cmd] Attempting to kill child process: 5724 (PING.EXE)
+[2024-12-30 00:48:28] [SUCCESS] [pinger test cmd] Killed child process 5724 (PING.EXE)
+[2024-12-30 00:48:28] [DEBUG] [pinger test cmd] Killing launcher PowerShell process 17052
+[2024-12-30 00:48:28] [SUCCESS] [pinger test cmd] Killed PowerShell host process
+[2024-12-30 00:48:28] [INFO] [pinger test cmd] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 00:48:28] [INFO] [pinger test cmd] Added to launch queue
+[2024-12-30 00:48:28] [INFO] [pinger test powershell] No virtual environment required
+[2024-12-30 00:48:28] [INFO] [pinger test powershell] Checking for running instances...
+[2024-12-30 00:48:28] [DEBUG] [pinger test powershell] Looking for direct command: powershell -Command ping 8.8.8.8 -t
+[2024-12-30 00:48:28] [INFO] [pinger test powershell] No running instances found
+[2024-12-30 00:48:28] [INFO] [pinger test powershell] Added to launch queue
+[2024-12-30 00:48:28] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:48:28] [INFO] [s01] No running instances found
+[2024-12-30 00:48:28] [INFO] [s01] Added to launch queue
+[2024-12-30 00:48:28] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:48:31] [WARNING] [s02] Found 2 related processes
+[2024-12-30 00:48:31] [WARNING] [s02] Process Details:
+  PID: 12736
+  Parent PID: 24472
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.80 MB
+  Running Time: 00:01:31.0006125
+  Start Time: 12/30/2024 00:46:58
+  Command: "C:\Servers\venv_s02\Scripts\python.exe" s02.py
+[2024-12-30 00:48:31] [WARNING] [s02] Process Details:
+  PID: 22532
+  Parent PID: 12736
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.60 MB
+  Running Time: 00:01:32.1841492
+  Start Time: 12/30/2024 00:46:58
+  Command: "C:\Python\Python312\python.exe" s02.py
+[2024-12-30 00:48:48] [INFO] [s02] Stopping existing processes...
+[2024-12-30 00:48:48] [INFO] [s02] Attempting to stop process and cleanup for 12736...
+[2024-12-30 00:48:49] [DEBUG] [s02] Main process is: python.exe
+[2024-12-30 00:48:49] [DEBUG] [s02] Killing main process 12736
+[2024-12-30 00:48:49] [SUCCESS] [s02] Killed main process
+[2024-12-30 00:48:49] [DEBUG] [s02] Killing launcher PowerShell process 24472
+[2024-12-30 00:48:49] [SUCCESS] [s02] Killed PowerShell host process
+[2024-12-30 00:48:49] [INFO] [s02] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 00:48:49] [INFO] [s02] Added to launch queue
+[2024-12-30 00:48:49] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:48:49] [INFO] [s03] No running instances found
+[2024-12-30 00:48:49] [INFO] [s03] Added to launch queue
+[2024-12-30 00:48:49] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:48:49] [INFO] [s04] No running instances found
+[2024-12-30 00:48:49] [INFO] [s04] Added to launch queue
+[2024-12-30 00:48:49] [INFO] [Launcher] Launching 7 server(s)...
+[2024-12-30 00:48:49] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:48:49] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:48:50] [INFO] [pinger test cmd] Launching server window...
+[2024-12-30 00:48:50] [INFO] [pinger test cmd] Launching with command: cmd.exe /c ping 1.1.1.1 -t
+[2024-12-30 00:48:50] [INFO] [pinger test powershell] Launching server window...
+[2024-12-30 00:48:50] [INFO] [pinger test powershell] Launching with command: powershell -Command ping 8.8.8.8 -t
+[2024-12-30 00:48:51] [INFO] [s01] Launching server window...
+[2024-12-30 00:48:51] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:48:52] [INFO] [s02] Launching server window...
+[2024-12-30 00:48:52] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:48:52] [INFO] [s03] Launching server window...
+[2024-12-30 00:48:52] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:48:53] [INFO] [s04] Launching server window...
+[2024-12-30 00:48:53] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:55:25] [SUCCESS] [Config] Loaded 7 server configurations
+[2024-12-30 00:55:25] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:55:25] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:55:25] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:55:25] [DEBUG] [ollama-server] Looking for direct command: ollama serve
+[2024-12-30 00:55:25] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:55:25] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:55:25] [INFO] [pinger test cmd] No virtual environment required
+[2024-12-30 00:55:25] [INFO] [pinger test cmd] Checking for running instances...
+[2024-12-30 00:55:25] [DEBUG] [pinger test cmd] Looking for cmd command: ping 1.1.1.1 -t
+[2024-12-30 00:55:26] [INFO] [pinger test cmd] No running instances found
+[2024-12-30 00:55:26] [INFO] [pinger test cmd] Added to launch queue
+[2024-12-30 00:55:26] [INFO] [pinger test powershell] No virtual environment required
+[2024-12-30 00:55:26] [INFO] [pinger test powershell] Checking for running instances...
+[2024-12-30 00:55:26] [DEBUG] [pinger test powershell] Looking for direct command: powershell -Command ping 8.8.8.8 -t
+[2024-12-30 00:55:26] [INFO] [pinger test powershell] No running instances found
+[2024-12-30 00:55:26] [INFO] [pinger test powershell] Added to launch queue
+[2024-12-30 00:55:26] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:55:26] [INFO] [s01] No running instances found
+[2024-12-30 00:55:26] [INFO] [s01] Added to launch queue
+[2024-12-30 00:55:26] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:55:26] [INFO] [s02] No running instances found
+[2024-12-30 00:55:26] [INFO] [s02] Added to launch queue
+[2024-12-30 00:55:26] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:55:26] [INFO] [s03] No running instances found
+[2024-12-30 00:55:26] [INFO] [s03] Added to launch queue
+[2024-12-30 00:55:26] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:55:26] [INFO] [s04] No running instances found
+[2024-12-30 00:55:26] [INFO] [s04] Added to launch queue
+[2024-12-30 00:55:26] [INFO] [Launcher] Launching 7 server(s)...
+[2024-12-30 00:55:26] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:55:26] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:55:27] [INFO] [pinger test cmd] Launching server window...
+[2024-12-30 00:55:27] [INFO] [pinger test cmd] Launching with command: cmd.exe /c ping 1.1.1.1 -t
+[2024-12-30 00:55:28] [INFO] [pinger test powershell] Launching server window...
+[2024-12-30 00:55:28] [INFO] [pinger test powershell] Launching with command: powershell -Command ping 8.8.8.8 -t
+[2024-12-30 00:55:28] [INFO] [s01] Launching server window...
+[2024-12-30 00:55:28] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:55:29] [INFO] [s02] Launching server window...
+[2024-12-30 00:55:29] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:55:30] [INFO] [s03] Launching server window...
+[2024-12-30 00:55:30] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:55:30] [INFO] [s04] Launching server window...
+[2024-12-30 00:55:30] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:55:48] [SUCCESS] [Config] Loaded 7 server configurations
+[2024-12-30 00:55:48] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:55:48] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:55:48] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:55:48] [DEBUG] [ollama-server] Looking for direct command: ollama serve
+[2024-12-30 00:55:48] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:55:48] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:55:48] [INFO] [pinger test cmd] No virtual environment required
+[2024-12-30 00:55:48] [INFO] [pinger test cmd] Checking for running instances...
+[2024-12-30 00:55:48] [DEBUG] [pinger test cmd] Looking for cmd command: ping 1.1.1.1 -t
+[2024-12-30 00:55:50] [DEBUG] [pinger test cmd] Found cmd process with children:
+[2024-12-30 00:55:50] [DEBUG] [pinger test cmd] Child process: 22196 - PING.EXE
+[2024-12-30 00:55:50] [WARNING] [pinger test cmd] Found 1 related processes
+[2024-12-30 00:55:50] [WARNING] [pinger test cmd] Process Details:
+  PID: 20608 (cmd process)
+  Parent PID: 21564
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 4.45 MB
+  Running Time: 00:00:21.5481035
+  Start Time: 12/30/2024 00:55:28
+  Command: "C:\WINDOWS\system32\cmd.exe" /c ping 1.1.1.1 -t
+[2024-12-30 00:55:50] [DEBUG] [pinger test cmd]   Child Process: 22196 - PING.EXE
+[2024-12-30 00:55:55] [INFO] [pinger test cmd] Stopping existing processes...
+[2024-12-30 00:55:55] [INFO] [pinger test cmd] Attempting to stop process and cleanup for 20608...
+[2024-12-30 00:55:55] [DEBUG] [pinger test cmd] Main process is: cmd.exe
+[2024-12-30 00:55:56] [DEBUG] [pinger test cmd] Killing child process: 22196 (PING.EXE)
+[2024-12-30 00:55:56] [SUCCESS] [pinger test cmd] Killed child process
+[2024-12-30 00:55:56] [DEBUG] [pinger test cmd] Killing PowerShell process 21564
+[2024-12-30 00:55:56] [SUCCESS] [pinger test cmd] Killed PowerShell process
+[2024-12-30 00:55:56] [DEBUG] [pinger test cmd] Killing PowerShell process 21564
+[2024-12-30 00:55:56] [WARNING] [pinger test cmd] Error killing PowerShell: Cannot find a process with the process identifier 21564.
+[2024-12-30 00:55:56] [ERROR] [pinger test cmd] Failed to stop process: ERROR: The process "21564" not found.
+[2024-12-30 00:55:56] [ERROR] [pinger test cmd] Failed to stop process 20608
+[2024-12-30 00:56:09] [INFO] [pinger test cmd] Checking for running instances...
+[2024-12-30 00:56:09] [DEBUG] [pinger test cmd] Looking for cmd command: ping 1.1.1.1 -t
+[2024-12-30 00:56:10] [INFO] [pinger test cmd] No running instances found
+[2024-12-30 00:56:10] [INFO] [pinger test cmd] Added to launch queue
+[2024-12-30 00:56:10] [INFO] [pinger test powershell] No virtual environment required
+[2024-12-30 00:56:10] [INFO] [pinger test powershell] Checking for running instances...
+[2024-12-30 00:56:10] [DEBUG] [pinger test powershell] Looking for direct command: powershell -Command ping 8.8.8.8 -t
+[2024-12-30 00:56:10] [INFO] [pinger test powershell] No running instances found
+[2024-12-30 00:56:10] [INFO] [pinger test powershell] Added to launch queue
+[2024-12-30 00:56:10] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:56:10] [INFO] [s01] No running instances found
+[2024-12-30 00:56:10] [INFO] [s01] Added to launch queue
+[2024-12-30 00:56:10] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:56:10] [INFO] [s02] No running instances found
+[2024-12-30 00:56:10] [INFO] [s02] Added to launch queue
+[2024-12-30 00:56:10] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:56:10] [INFO] [s03] No running instances found
+[2024-12-30 00:56:10] [INFO] [s03] Added to launch queue
+[2024-12-30 00:56:10] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:56:13] [WARNING] [s04] Found 2 related processes
+[2024-12-30 00:56:13] [WARNING] [s04] Process Details:
+  PID: 1824
+  Parent PID: 8604
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.80 MB
+  Running Time: 00:00:40.5421125
+  Start Time: 12/30/2024 00:55:31
+  Command: "C:\Servers\venv_s04\Scripts\python.exe" s04.py
+[2024-12-30 00:56:13] [WARNING] [s04] Process Details:
+  PID: 24664
+  Parent PID: 1824
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.60 MB
+  Running Time: 00:00:41.7360922
+  Start Time: 12/30/2024 00:55:31
+  Command: "C:\Python\Python312\python.exe" s04.py
+[2024-12-30 00:56:22] [INFO] [s04] Stopping existing processes...
+[2024-12-30 00:56:22] [INFO] [s04] Attempting to stop process and cleanup for 1824...
+[2024-12-30 00:56:22] [DEBUG] [s04] Main process is: python.exe
+[2024-12-30 00:56:22] [DEBUG] [s04] Killing child process: 24664 (python.exe)
+[2024-12-30 00:56:22] [SUCCESS] [s04] Killed child process
+[2024-12-30 00:56:23] [DEBUG] [s04] Killing PowerShell process 8604
+[2024-12-30 00:56:23] [SUCCESS] [s04] Killed PowerShell process
+[2024-12-30 00:56:23] [DEBUG] [s04] Killing PowerShell process 8604
+[2024-12-30 00:56:23] [SUCCESS] [s04] Killed PowerShell process
+[2024-12-30 00:56:23] [INFO] [s04] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 00:56:23] [INFO] [s04] Added to launch queue
+[2024-12-30 00:56:23] [INFO] [Launcher] Launching 7 server(s)...
+[2024-12-30 00:56:23] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:56:23] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:56:23] [INFO] [pinger test cmd] Launching server window...
+[2024-12-30 00:56:23] [INFO] [pinger test cmd] Launching with command: cmd.exe /c ping 1.1.1.1 -t
+[2024-12-30 00:56:24] [INFO] [pinger test powershell] Launching server window...
+[2024-12-30 00:56:24] [INFO] [pinger test powershell] Launching with command: powershell -Command ping 8.8.8.8 -t
+[2024-12-30 00:56:25] [INFO] [s01] Launching server window...
+[2024-12-30 00:56:25] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:56:25] [INFO] [s02] Launching server window...
+[2024-12-30 00:56:25] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:56:26] [INFO] [s03] Launching server window...
+[2024-12-30 00:56:26] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:56:27] [INFO] [s04] Launching server window...
+[2024-12-30 00:56:27] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:58:31] [SUCCESS] [Config] Loaded 7 server configurations
+[2024-12-30 00:58:31] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:58:31] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:58:31] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:58:31] [DEBUG] [ollama-server] Looking for direct command: ollama serve
+[2024-12-30 00:58:31] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:58:31] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:58:31] [INFO] [pinger test cmd] No virtual environment required
+[2024-12-30 00:58:31] [INFO] [pinger test cmd] Checking for running instances...
+[2024-12-30 00:58:31] [DEBUG] [pinger test cmd] Looking for cmd command: ping 1.1.1.1 -t
+[2024-12-30 00:58:31] [INFO] [pinger test cmd] No running instances found
+[2024-12-30 00:58:31] [INFO] [pinger test cmd] Added to launch queue
+[2024-12-30 00:58:31] [INFO] [pinger test powershell] No virtual environment required
+[2024-12-30 00:58:31] [INFO] [pinger test powershell] Checking for running instances...
+[2024-12-30 00:58:31] [DEBUG] [pinger test powershell] Looking for direct command: powershell -Command ping 8.8.8.8 -t
+[2024-12-30 00:58:32] [INFO] [pinger test powershell] No running instances found
+[2024-12-30 00:58:32] [INFO] [pinger test powershell] Added to launch queue
+[2024-12-30 00:58:32] [INFO] [s01] Checking for running instances...
+[2024-12-30 00:58:32] [INFO] [s01] No running instances found
+[2024-12-30 00:58:32] [INFO] [s01] Added to launch queue
+[2024-12-30 00:58:32] [INFO] [s02] Checking for running instances...
+[2024-12-30 00:58:32] [INFO] [s02] No running instances found
+[2024-12-30 00:58:32] [INFO] [s02] Added to launch queue
+[2024-12-30 00:58:32] [INFO] [s03] Checking for running instances...
+[2024-12-30 00:58:32] [INFO] [s03] No running instances found
+[2024-12-30 00:58:32] [INFO] [s03] Added to launch queue
+[2024-12-30 00:58:32] [INFO] [s04] Checking for running instances...
+[2024-12-30 00:58:32] [INFO] [s04] No running instances found
+[2024-12-30 00:58:32] [INFO] [s04] Added to launch queue
+[2024-12-30 00:58:32] [INFO] [Launcher] Launching 7 server(s)...
+[2024-12-30 00:58:32] [INFO] [ollama-server] Launching server window...
+[2024-12-30 00:58:32] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 00:58:33] [INFO] [pinger test cmd] Launching server window...
+[2024-12-30 00:58:33] [INFO] [pinger test cmd] Launching with command: cmd.exe /c ping 1.1.1.1 -t
+[2024-12-30 00:58:33] [INFO] [pinger test powershell] Launching server window...
+[2024-12-30 00:58:33] [INFO] [pinger test powershell] Launching with command: powershell -Command ping 8.8.8.8 -t
+[2024-12-30 00:58:34] [INFO] [s01] Launching server window...
+[2024-12-30 00:58:34] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 00:58:35] [INFO] [s02] Launching server window...
+[2024-12-30 00:58:35] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 00:58:35] [INFO] [s03] Launching server window...
+[2024-12-30 00:58:35] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 00:58:36] [INFO] [s04] Launching server window...
+[2024-12-30 00:58:36] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 00:58:56] [SUCCESS] [Config] Loaded 7 server configurations
+[2024-12-30 00:58:56] [INFO] [Launcher] Starting server checks...
+[2024-12-30 00:58:57] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 00:58:57] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 00:58:57] [DEBUG] [ollama-server] Looking for direct command: ollama serve
+[2024-12-30 00:58:57] [INFO] [ollama-server] No running instances found
+[2024-12-30 00:58:57] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 00:58:57] [INFO] [pinger test cmd] No virtual environment required
+[2024-12-30 00:58:57] [INFO] [pinger test cmd] Checking for running instances...
+[2024-12-30 00:58:57] [DEBUG] [pinger test cmd] Looking for cmd command: ping 1.1.1.1 -t
+[2024-12-30 00:58:58] [DEBUG] [pinger test cmd] Found cmd process with children:
+[2024-12-30 00:58:58] [DEBUG] [pinger test cmd] Child process: 18644 - PING.EXE
+[2024-12-30 00:58:58] [WARNING] [pinger test cmd] Found 1 related processes
+[2024-12-30 00:58:58] [WARNING] [pinger test cmd] Process Details:
+  PID: 24204 (cmd process)
+  Parent PID: 9424
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 4.45 MB
+  Running Time: 00:00:24.3143125
+  Start Time: 12/30/2024 00:58:34
+  Command: "C:\WINDOWS\system32\cmd.exe" /c ping 1.1.1.1 -t
+[2024-12-30 00:58:58] [DEBUG] [pinger test cmd]   Child Process: 18644 - PING.EXE
+[2024-12-30 00:59:02] [INFO] [pinger test cmd] Stopping existing processes...
+[2024-12-30 00:59:02] [INFO] [pinger test cmd] Attempting to stop process and cleanup for 24204...
+[2024-12-30 00:59:02] [DEBUG] [pinger test cmd] Main process is: cmd.exe
+[2024-12-30 00:59:02] [DEBUG] [pinger test cmd] Killing child process: 18644 (PING.EXE)
+[2024-12-30 00:59:02] [SUCCESS] [pinger test cmd] Killed child process
+[2024-12-30 00:59:03] [DEBUG] [pinger test cmd] Killing PowerShell process 9424
+[2024-12-30 00:59:03] [SUCCESS] [pinger test cmd] Killed PowerShell process
+[2024-12-30 00:59:03] [DEBUG] [pinger test cmd] Killing PowerShell process 9424
+[2024-12-30 00:59:03] [WARNING] [pinger test cmd] Error killing PowerShell: Cannot find a process with the process identifier 9424.
+[2024-12-30 00:59:03] [ERROR] [pinger test cmd] Failed to stop process: ERROR: The process "9424" not found.
+[2024-12-30 00:59:03] [ERROR] [pinger test cmd] Failed to stop process 24204
+[2024-12-30 01:03:35] [SUCCESS] [Config] Loaded 7 server configurations
+[2024-12-30 01:03:35] [INFO] [Launcher] Starting server checks...
+[2024-12-30 01:03:35] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 01:03:35] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 01:03:35] [DEBUG] [ollama-server] Looking for direct command: ollama serve
+[2024-12-30 01:03:35] [INFO] [ollama-server] No running instances found
+[2024-12-30 01:03:35] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 01:03:35] [INFO] [pinger test cmd] No virtual environment required
+[2024-12-30 01:03:35] [INFO] [pinger test cmd] Checking for running instances...
+[2024-12-30 01:03:35] [DEBUG] [pinger test cmd] Looking for cmd command: ping 1.1.1.1 -t
+[2024-12-30 01:03:36] [INFO] [pinger test cmd] No running instances found
+[2024-12-30 01:03:36] [INFO] [pinger test cmd] Added to launch queue
+[2024-12-30 01:03:36] [INFO] [pinger test powershell] No virtual environment required
+[2024-12-30 01:03:36] [INFO] [pinger test powershell] Checking for running instances...
+[2024-12-30 01:03:36] [DEBUG] [pinger test powershell] Looking for direct command: powershell -Command ping 8.8.8.8 -t
+[2024-12-30 01:03:36] [INFO] [pinger test powershell] No running instances found
+[2024-12-30 01:03:36] [INFO] [pinger test powershell] Added to launch queue
+[2024-12-30 01:03:36] [INFO] [s01] Checking for running instances...
+[2024-12-30 01:03:36] [INFO] [s01] No running instances found
+[2024-12-30 01:03:36] [INFO] [s01] Added to launch queue
+[2024-12-30 01:03:36] [INFO] [s02] Checking for running instances...
+[2024-12-30 01:03:36] [INFO] [s02] No running instances found
+[2024-12-30 01:03:36] [INFO] [s02] Added to launch queue
+[2024-12-30 01:03:36] [INFO] [s03] Checking for running instances...
+[2024-12-30 01:03:36] [INFO] [s03] No running instances found
+[2024-12-30 01:03:36] [INFO] [s03] Added to launch queue
+[2024-12-30 01:03:36] [INFO] [s04] Checking for running instances...
+[2024-12-30 01:03:36] [INFO] [s04] No running instances found
+[2024-12-30 01:03:36] [INFO] [s04] Added to launch queue
+[2024-12-30 01:03:36] [INFO] [Launcher] Launching 7 server(s)...
+[2024-12-30 01:03:36] [INFO] [ollama-server] Launching server window...
+[2024-12-30 01:03:36] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 01:03:37] [INFO] [pinger test cmd] Launching server window...
+[2024-12-30 01:03:37] [INFO] [pinger test cmd] Launching with command: cmd.exe /c ping 1.1.1.1 -t
+[2024-12-30 01:03:38] [INFO] [pinger test powershell] Launching server window...
+[2024-12-30 01:03:38] [INFO] [pinger test powershell] Launching with command: powershell -Command ping 8.8.8.8 -t
+[2024-12-30 01:03:38] [INFO] [s01] Launching server window...
+[2024-12-30 01:03:38] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 01:03:39] [INFO] [s02] Launching server window...
+[2024-12-30 01:03:39] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 01:03:40] [INFO] [s03] Launching server window...
+[2024-12-30 01:03:40] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 01:03:40] [INFO] [s04] Launching server window...
+[2024-12-30 01:03:40] [INFO] [s04] Launching with command: python s04.py
+[2024-12-30 01:04:44] [SUCCESS] [Config] Loaded 7 server configurations
+[2024-12-30 01:04:44] [INFO] [Launcher] Starting server checks...
+[2024-12-30 01:04:44] [INFO] [ollama-server] No virtual environment required
+[2024-12-30 01:04:44] [INFO] [ollama-server] Checking for running instances...
+[2024-12-30 01:04:44] [DEBUG] [ollama-server] Looking for direct command: ollama serve
+[2024-12-30 01:04:45] [INFO] [ollama-server] No running instances found
+[2024-12-30 01:04:45] [INFO] [ollama-server] Added to launch queue
+[2024-12-30 01:04:45] [INFO] [pinger test cmd] No virtual environment required
+[2024-12-30 01:04:45] [INFO] [pinger test cmd] Checking for running instances...
+[2024-12-30 01:04:45] [DEBUG] [pinger test cmd] Looking for cmd command: ping 1.1.1.1 -t
+[2024-12-30 01:04:46] [DEBUG] [pinger test cmd] Found cmd process with children:
+[2024-12-30 01:04:46] [DEBUG] [pinger test cmd] Child process: 22980 - PING.EXE
+[2024-12-30 01:04:46] [WARNING] [pinger test cmd] Found 1 related processes
+[2024-12-30 01:04:46] [WARNING] [pinger test cmd] Process Details:
+  PID: 11880 (cmd process)
+  Parent PID: 9756
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 4.44 MB
+  Running Time: 00:01:07.8052676
+  Start Time: 12/30/2024 01:03:38
+  Command: "C:\WINDOWS\system32\cmd.exe" /c ping 1.1.1.1 -t
+[2024-12-30 01:04:46] [DEBUG] [pinger test cmd]   Child Process: 22980 - PING.EXE
+[2024-12-30 01:04:50] [INFO] [pinger test cmd] Stopping existing processes...
+[2024-12-30 01:04:50] [INFO] [pinger test cmd] Attempting to stop process and cleanup for 11880...
+[2024-12-30 01:04:50] [DEBUG] [pinger test cmd] Main process is: cmd.exe
+[2024-12-30 01:04:50] [DEBUG] [pinger test cmd] Killing child process: 22980 (PING.EXE)
+[2024-12-30 01:04:50] [SUCCESS] [pinger test cmd] Killed child process
+[2024-12-30 01:04:51] [DEBUG] [pinger test cmd] Killing PowerShell process 9756
+[2024-12-30 01:04:51] [SUCCESS] [pinger test cmd] Killed PowerShell process
+[2024-12-30 01:04:51] [INFO] [pinger test cmd] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 01:04:51] [INFO] [pinger test cmd] Added to launch queue
+[2024-12-30 01:04:51] [INFO] [pinger test powershell] No virtual environment required
+[2024-12-30 01:04:51] [INFO] [pinger test powershell] Checking for running instances...
+[2024-12-30 01:04:51] [DEBUG] [pinger test powershell] Looking for direct command: powershell -Command ping 8.8.8.8 -t
+[2024-12-30 01:04:51] [INFO] [pinger test powershell] No running instances found
+[2024-12-30 01:04:51] [INFO] [pinger test powershell] Added to launch queue
+[2024-12-30 01:04:51] [INFO] [s01] Checking for running instances...
+[2024-12-30 01:04:51] [INFO] [s01] No running instances found
+[2024-12-30 01:04:51] [INFO] [s01] Added to launch queue
+[2024-12-30 01:04:51] [INFO] [s02] Checking for running instances...
+[2024-12-30 01:04:53] [WARNING] [s02] Found 2 related processes
+[2024-12-30 01:04:53] [WARNING] [s02] Process Details:
+  PID: 19980
+  Parent PID: 18280
+  Parent Process: powershell.exe
+  CPU: 0.0%
+  Memory: 3.80 MB
+  Running Time: 00:01:12.2197068
+  Start Time: 12/30/2024 01:03:40
+  Command: "C:\Servers\venv_s02\Scripts\python.exe" s02.py
+[2024-12-30 01:04:53] [WARNING] [s02] Process Details:
+  PID: 20048
+  Parent PID: 19980
+  Parent Process: python.exe
+  CPU: 0.0%
+  Memory: 9.61 MB
+  Running Time: 00:01:13.3928518
+  Start Time: 12/30/2024 01:03:40
+  Command: "C:\Python\Python312\python.exe" s02.py
+[2024-12-30 01:05:01] [INFO] [s02] Stopping existing processes...
+[2024-12-30 01:05:01] [INFO] [s02] Attempting to stop process and cleanup for 19980...
+[2024-12-30 01:05:01] [DEBUG] [s02] Main process is: python.exe
+[2024-12-30 01:05:01] [DEBUG] [s02] Killing child process: 20048 (python.exe)
+[2024-12-30 01:05:01] [SUCCESS] [s02] Killed child process
+[2024-12-30 01:05:01] [DEBUG] [s02] Killing PowerShell process 18280
+[2024-12-30 01:05:01] [SUCCESS] [s02] Killed PowerShell process
+[2024-12-30 01:05:01] [INFO] [s02] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 01:05:01] [INFO] [s02] Added to launch queue
+[2024-12-30 01:05:01] [INFO] [s03] Checking for running instances...
+[2024-12-30 01:05:01] [INFO] [s03] No running instances found
+[2024-12-30 01:05:01] [INFO] [s03] Added to launch queue
+[2024-12-30 01:05:01] [INFO] [s04] Checking for running instances...
+[2024-12-30 01:05:02] [INFO] [s04] No running instances found
+[2024-12-30 01:05:02] [INFO] [s04] Added to launch queue
+[2024-12-30 01:05:02] [INFO] [Launcher] Launching 7 server(s)...
+[2024-12-30 01:05:02] [INFO] [ollama-server] Launching server window...
+[2024-12-30 01:05:02] [INFO] [ollama-server] Launching with command: ollama serve
+[2024-12-30 01:05:02] [INFO] [pinger test cmd] Launching server window...
+[2024-12-30 01:05:02] [INFO] [pinger test cmd] Launching with command: cmd.exe /c ping 1.1.1.1 -t
+[2024-12-30 01:05:03] [INFO] [pinger test powershell] Launching server window...
+[2024-12-30 01:05:03] [INFO] [pinger test powershell] Launching with command: powershell -Command ping 8.8.8.8 -t
+[2024-12-30 01:05:04] [INFO] [s01] Launching server window...
+[2024-12-30 01:05:04] [INFO] [s01] Launching with command: python s01.py
+[2024-12-30 01:05:04] [INFO] [s02] Launching server window...
+[2024-12-30 01:05:04] [INFO] [s02] Launching with command: python s02.py
+[2024-12-30 01:05:05] [INFO] [s03] Launching server window...
+[2024-12-30 01:05:05] [INFO] [s03] Launching with command: python s03.py
+[2024-12-30 01:05:06] [INFO] [s04] Launching server window...
+[2024-12-30 01:05:06] [INFO] [s04] Launching with command: python s04.py

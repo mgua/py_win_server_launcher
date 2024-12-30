@@ -63,7 +63,7 @@
 			"venvPath": "not_needed",
 			"startupCmd": "cmd.exe /c ping 1.1.1.1 -t",
 			"title": "pinger test CMD",
-			"colorScheme": "IBM 5153",
+			"colorScheme": "Tango Light",
 			"position": {
 				"x": 5,
 				"y": 20,
