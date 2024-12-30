@@ -1,0 +1,197 @@
+{
+    "config": {
+        "logging": {
+            "enabled": true,
+            "directory": ".\\logs",
+            "filename": "py_win_server_launcher.log",
+            "maxLogSize": "10MB",
+            "maxLogFiles": 5
+        },
+        "terminal": {
+            "launchDelay": 500,
+            "titleLength": 22
+        },
+        "process": {
+            "gracefulShutdownTimeout": 5000,
+            "checkInterval": 1000
+        },
+        "defaults": {
+            "width": 80,
+            "height": 15,
+            "colorScheme": "Campbell Powershell"
+        },
+        "layouts": {
+            "twoByTwo": [
+                { "x": 10, "y": 10, "width": 80, "height": 15 },
+                { "x": 10, "y": 500, "width": 80, "height": 15 },
+                { "x": 900, "y": 10, "width": 80, "height": 15 },
+                { "x": 900, "y": 500, "width": 80, "height": 15 }
+            ],
+            "vertical": [
+                { "x": 0, "y": 0, "width": 80, "height": 15 },
+                { "x": 0, "y": 300, "width": 80, "height": 15 },
+                { "x": 0, "y": 600, "width": 80, "height": 15 },
+                { "x": 0, "y": 900, "width": 80, "height": 15 }
+            ],
+            "horizontal": [
+                { "x": 0, "y": 0, "width": 80, "height": 15 },
+                { "x": 600, "y": 0, "width": 80, "height": 15 },
+                { "x": 1200, "y": 0, "width": 80, "height": 15 },
+                { "x": 1800, "y": 0, "width": 80, "height": 15 }
+            ]
+        }
+    },
+    "servers": [
+        {
+            "id": "ols",
+            "title": "Ollama Server",
+            "description": "Local Ollama API server for AI model inference",
+            "active": true,
+            "type": "command",
+            "command": "d:\\py_win_server_launcher\\ollama_server_launcher.ps1",
+            "workingDir": "d:\\py_win_server_launcher",
+            "display": {
+                "colorScheme": "Tango Dark",
+                "position": {
+                    "x": 1600,
+                    "y": 20,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+        {
+            "id": "ping-cloudflare",
+            "title": "Cloudflare Ping Test",
+            "description": "Continuous ping to Cloudflare DNS for connectivity monitoring",
+            "active": false,
+            "type": "command",
+            "shell": "cmd",
+            "command": "ping 1.1.1.1 -t",
+            "workingDir": "d:\\py_win_server_launcher",
+            "display": {
+                "colorScheme": "Tango Light",
+                "position": {
+                    "x": 20,
+                    "y": 1000,
+                    "width": 30,
+                    "height": 8
+                }
+            }
+        },
+        {
+            "id": "ping-google",
+            "title": "google Ping Test",
+            "description": "Continuous ping to google DNS for connectivity monitoring",
+            "active": false,
+            "type": "command",
+            "shell": "cmd",
+            "command": "ping 8.8.8.8 -t",
+            "workingDir": "d:\\py_win_server_launcher",
+            "display": {
+                "colorScheme": "CGA",
+                "position": {
+                    "x": 20,
+                    "y": 1200,
+                    "width": 30,
+                    "height": 8
+                }
+            }
+        },
+        {
+            "id": "tailor_server",
+            "title": "tailor frontend",
+            "description": "tailor virtual assistant",
+            "active": true,
+            "type": "python",
+            "command": "tailor_server.py",
+            "workingDir": "d:\\sw\\ollama_web_assistant",
+            "venv": "d:\\sw\\venv_ollama_web_assistant",
+            "display": {
+                "colorScheme": "Campbell Powershell",
+                "position": {
+                    "x": 20,
+                    "y": 20,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+		{
+            "id": "mail_processor",
+            "title": "mail_processor (only wizwks01)",
+            "description": "performs email retrieval and answers, from the same webassistant venv",
+            "active": true,
+            "type": "python",
+            "command": "./email_engine_g2/process_emails4.py",
+            "workingDir": "d:\\sw\\ollama_web_assistant",
+            "venv": "d:\\sw\\venv_ollama_web_assistant",
+            "display": {
+                "colorScheme": "Solarized Dark",
+                "position": {
+                    "x": 20,
+                    "y": 600,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },		
+        {
+            "id": "gufo_server",
+            "title": "gufo frontend",
+            "description": "document collection manager frontend",
+            "active": true,
+            "type": "python",
+            "command": "gufo_server.py",
+            "workingDir": "d:\\sw\\gufo",
+            "venv": "d:\\sw\\venv_gufo",
+            "display": {
+                "colorScheme": "Solarized Light",
+                "position": {
+                    "x": 20,
+                    "y": 900,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+        {
+            "id": "comfyUI",
+            "title": "comfyUI",
+            "description": "stable diffusion picture generation tool",
+            "active": true,
+            "type": "command",
+            "shell": "cmd",
+            "command": "run_nvidia_gpu.bat",
+            "workingDir": "D:\\comfy\\ComfyUI_windows_portable_nvidia\\ComfyUI_windows_portable",
+            "display": {
+                "colorScheme": "One Half Dark",
+                "position": {
+                    "x": 900,
+                    "y": 800,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+        {
+            "id": "openwebui",
+            "title": "OpenWebUI",
+            "description": "constantly updated llm web interface",
+            "active": true,
+            "type": "venv-command",
+            "command": "open-webui serve",
+            "workingDir": "d:\\sw\\openwebui",
+            "venv": "d:\\sw\\venv_openwebui",
+            "display": {
+                "colorScheme": "Solarized Light",
+                "position": {
+                    "x": 900,
+                    "y": 10,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        }
+    ]
+}
