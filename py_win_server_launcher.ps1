@@ -42,7 +42,7 @@
 [CmdletBinding()]
 param(
     [Parameter(Position = 0)]
-    [string]$ConfigFile = ".\py_win_server_launcher.json",
+    [string]$ConfigFile = ".\\py_win_server_launcher.json",
     
     [Parameter()]
     [Alias('f')]

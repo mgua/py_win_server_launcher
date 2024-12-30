@@ -53,7 +53,7 @@
             "display": {
                 "colorScheme": "Tango Dark",
                 "position": {
-                    "x": 5,
+                    "x": 1600,
                     "y": 20,
                     "width": 80,
                     "height": 15
@@ -64,7 +64,7 @@
             "id": "ping-cloudflare",
             "title": "Cloudflare Ping Test",
             "description": "Continuous ping to Cloudflare DNS for connectivity monitoring",
-            "active": true,
+            "active": false,
             "type": "command",
             "shell": "cmd",
             "command": "ping 1.1.1.1 -t",
@@ -72,14 +72,13 @@
             "display": {
                 "colorScheme": "Tango Light",
                 "position": {
-                    "x": 5,
-                    "y": 20,
-                    "width": 60,
-                    "height": 10
+                    "x": 20,
+                    "y": 1000,
+                    "width": 30,
+                    "height": 8
                 }
             }
         },
-		
         {
             "id": "ping-google",
             "title": "google Ping Test",
@@ -92,14 +91,13 @@
             "display": {
                 "colorScheme": "CGA",
                 "position": {
-                    "x": 800,
-                    "y": 50,
-                    "width": 60,
-                    "height": 10
+                    "x": 20,
+                    "y": 1200,
+                    "width": 30,
+                    "height": 8
                 }
             }
-        },		
-		
+        },
         {
             "id": "tailor_server",
             "title": "tailor frontend",
@@ -112,14 +110,13 @@
             "display": {
                 "colorScheme": "Campbell Powershell",
                 "position": {
-                    "x": 10,
-                    "y": 10,
+                    "x": 20,
+                    "y": 20,
                     "width": 80,
                     "height": 15
                 }
             }
         },
-		
         {
             "id": "gufo_server",
             "title": "gufo frontend",
@@ -132,24 +129,21 @@
             "display": {
                 "colorScheme": "Solarized Light",
                 "position": {
-                    "x": 10,
-                    "y": 500,
+                    "x": 20,
+                    "y": 900,
                     "width": 80,
                     "height": 15
                 }
             }
         },
-		
-
         {
-			"id": "comfyUI",
+            "id": "comfyUI",
             "title": "comfyUI",
             "description": "stable diffusion picture generation tool",
-
             "active": true,
             "type": "command",
-			"shell": "cmd",
-            "command": "run nvidia_gpu.bat",
+            "shell": "cmd",
+            "command": "run_nvidia_gpu.bat",
             "workingDir": "D:\\comfy\\ComfyUI_windows_portable_nvidia\\ComfyUI_windows_portable",
             "display": {
                 "colorScheme": "One Half Dark",
@@ -161,13 +155,12 @@
                 }
             }
         },
-		
         {
-			"id": "openwebui",
+            "id": "openwebui",
             "title": "OpenWebUI",
             "description": "constantly updated llm web interface",
             "active": true,
-            "type": "command",
+            "type": "venv-command",
             "command": "open-webui serve",
             "workingDir": "d:\\sw\\openwebui",
             "venv": "d:\\sw\\venv_openwebui",
@@ -180,9 +173,6 @@
                     "height": 15
                 }
             }
-        },
-		
-		
-		
+        }
     ]
 }

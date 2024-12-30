@@ -1808,3 +1808,738 @@ at <ScriptBlock>, <No file>: line 1
 [2024-12-30 18:25:47] [ERROR] [s03] Server directory not found: C:\Servers\s03
 [2024-12-30 18:25:47] [ERROR] [s04] Server directory not found: C:\Servers\s04
 [2024-12-30 18:25:47] [INFO] [Launcher] No servers to launch. All servers are either running or launch was cancelled.
+[2024-12-30 18:32:31] [ERROR] [Launcher] Error in launcher: Error loading configurations: Invalid array passed in, extra trailing ','. (6076): {
+    "config": {
+        "logging": {
+            "enabled": true,
+            "directory": ".\\logs",
+            "filename": "py_win_server_launcher.log",
+            "maxLogSize": "10MB",
+            "maxLogFiles": 5
+        },
+        "terminal": {
+            "launchDelay": 500,
+            "titleLength": 22
+        },
+        "process": {
+            "gracefulShutdownTimeout": 5000,
+            "checkInterval": 1000
+        },
+        "defaults": {
+            "width": 80,
+            "height": 15,
+            "colorScheme": "Campbell Powershell"
+        },
+        "layouts": {
+            "twoByTwo": [
+                { "x": 10, "y": 10, "width": 80, "height": 15 },
+                { "x": 10, "y": 500, "width": 80, "height": 15 },
+                { "x": 900, "y": 10, "width": 80, "height": 15 },
+                { "x": 900, "y": 500, "width": 80, "height": 15 }
+            ],
+            "vertical": [
+                { "x": 0, "y": 0, "width": 80, "height": 15 },
+                { "x": 0, "y": 300, "width": 80, "height": 15 },
+                { "x": 0, "y": 600, "width": 80, "height": 15 },
+                { "x": 0, "y": 900, "width": 80, "height": 15 }
+            ],
+            "horizontal": [
+                { "x": 0, "y": 0, "width": 80, "height": 15 },
+                { "x": 600, "y": 0, "width": 80, "height": 15 },
+                { "x": 1200, "y": 0, "width": 80, "height": 15 },
+                { "x": 1800, "y": 0, "width": 80, "height": 15 }
+            ]
+        }
+    },
+    "servers": [
+        {
+            "id": "ols",
+            "title": "Ollama Server",
+            "description": "Local Ollama API server for AI model inference",
+            "active": true,
+            "type": "command",
+            "command": "d:\\py_win_server_launcher\\ollama_server_launcher.ps1",
+            "workingDir": "d:\\py_win_server_launcher",
+            "display": {
+                "colorScheme": "Tango Dark",
+                "position": {
+                    "x": 5,
+                    "y": 20,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+        {
+            "id": "ping-cloudflare",
+            "title": "Cloudflare Ping Test",
+            "description": "Continuous ping to Cloudflare DNS for connectivity monitoring",
+            "active": true,
+            "type": "command",
+            "shell": "cmd",
+            "command": "ping 1.1.1.1 -t",
+            "workingDir": "d:\\py_win_server_launcher",
+            "display": {
+                "colorScheme": "Tango Light",
+                "position": {
+                    "x": 5,
+                    "y": 20,
+                    "width": 60,
+                    "height": 10
+                }
+            }
+        },
+		
+        {
+            "id": "ping-google",
+            "title": "google Ping Test",
+            "description": "Continuous ping to google DNS for connectivity monitoring",
+            "active": true,
+            "type": "command",
+            "shell": "cmd",
+            "command": "ping 8.8.8.8 -t",
+            "workingDir": "d:\\py_win_server_launcher",
+            "display": {
+                "colorScheme": "CGA",
+                "position": {
+                    "x": 800,
+                    "y": 50,
+                    "width": 60,
+                    "height": 10
+                }
+            }
+        },		
+		
+        {
+            "id": "tailor_server",
+            "title": "tailor frontend",
+            "description": "tailor virtual assistant",
+            "active": true,
+            "type": "python",
+            "command": "tailor_server.py",
+            "workingDir": "d:\\sw\\ollama_web_assistant",
+            "venv": "d:\\sw\\venv_ollama_web_assistant",
+            "display": {
+                "colorScheme": "Campbell Powershell",
+                "position": {
+                    "x": 10,
+                    "y": 10,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+		
+        {
+            "id": "gufo_server",
+            "title": "gufo frontend",
+            "description": "document collection manager frontend",
+            "active": true,
+            "type": "python",
+            "command": "gufo_server.py",
+            "workingDir": "d:\\sw\\gufo",
+            "venv": "d:\\sw\\venv_gufo",
+            "display": {
+                "colorScheme": "Solarized Light",
+                "position": {
+                    "x": 10,
+                    "y": 500,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+		
+
+        {
+			"id": "comfyUI",
+            "title": "comfyUI",
+            "description": "stable diffusion picture generation tool",
+
+            "active": true,
+            "type": "command",
+			"shell": "cmd",
+            "command": "run nvidia_gpu.bat",
+            "workingDir": "D:\\comfy\\ComfyUI_windows_portable_nvidia\\ComfyUI_windows_portable",
+            "display": {
+                "colorScheme": "One Half Dark",
+                "position": {
+                    "x": 900,
+                    "y": 800,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+		
+        {
+			"id": "openwebui",
+            "title": "OpenWebUI",
+            "description": "constantly updated llm web interface",
+            "active": true,
+            "type": "command",
+            "command": "open-webui serve",
+            "workingDir": "d:\\sw\\openwebui",
+            "venv": "d:\\sw\\venv_openwebui",
+            "display": {
+                "colorScheme": "Solarized Light",
+                "position": {
+                    "x": 900,
+                    "y": 10,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+		
+		
+		
+    ]
+}
+[2024-12-30 18:32:31] [ERROR] [Launcher] Stack Trace: at Get-ServerConfigs, D:\py_win_server_launcher\py_win_server_launcher.ps1: line 344
+at Start-ServerLauncher, D:\py_win_server_launcher\py_win_server_launcher.ps1: line 817
+at <ScriptBlock>, D:\py_win_server_launcher\py_win_server_launcher.ps1: line 871
+at <ScriptBlock>, <No file>: line 1
+[2024-12-30 18:35:23] [ERROR] [Launcher] Error in launcher: Error loading configurations: Invalid array passed in, extra trailing ','. (6076): {
+    "config": {
+        "logging": {
+            "enabled": true,
+            "directory": ".\\logs",
+            "filename": "py_win_server_launcher.log",
+            "maxLogSize": "10MB",
+            "maxLogFiles": 5
+        },
+        "terminal": {
+            "launchDelay": 500,
+            "titleLength": 22
+        },
+        "process": {
+            "gracefulShutdownTimeout": 5000,
+            "checkInterval": 1000
+        },
+        "defaults": {
+            "width": 80,
+            "height": 15,
+            "colorScheme": "Campbell Powershell"
+        },
+        "layouts": {
+            "twoByTwo": [
+                { "x": 10, "y": 10, "width": 80, "height": 15 },
+                { "x": 10, "y": 500, "width": 80, "height": 15 },
+                { "x": 900, "y": 10, "width": 80, "height": 15 },
+                { "x": 900, "y": 500, "width": 80, "height": 15 }
+            ],
+            "vertical": [
+                { "x": 0, "y": 0, "width": 80, "height": 15 },
+                { "x": 0, "y": 300, "width": 80, "height": 15 },
+                { "x": 0, "y": 600, "width": 80, "height": 15 },
+                { "x": 0, "y": 900, "width": 80, "height": 15 }
+            ],
+            "horizontal": [
+                { "x": 0, "y": 0, "width": 80, "height": 15 },
+                { "x": 600, "y": 0, "width": 80, "height": 15 },
+                { "x": 1200, "y": 0, "width": 80, "height": 15 },
+                { "x": 1800, "y": 0, "width": 80, "height": 15 }
+            ]
+        }
+    },
+    "servers": [
+        {
+            "id": "ols",
+            "title": "Ollama Server",
+            "description": "Local Ollama API server for AI model inference",
+            "active": true,
+            "type": "command",
+            "command": "d:\\py_win_server_launcher\\ollama_server_launcher.ps1",
+            "workingDir": "d:\\py_win_server_launcher",
+            "display": {
+                "colorScheme": "Tango Dark",
+                "position": {
+                    "x": 5,
+                    "y": 20,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+        {
+            "id": "ping-cloudflare",
+            "title": "Cloudflare Ping Test",
+            "description": "Continuous ping to Cloudflare DNS for connectivity monitoring",
+            "active": true,
+            "type": "command",
+            "shell": "cmd",
+            "command": "ping 1.1.1.1 -t",
+            "workingDir": "d:\\py_win_server_launcher",
+            "display": {
+                "colorScheme": "Tango Light",
+                "position": {
+                    "x": 5,
+                    "y": 20,
+                    "width": 60,
+                    "height": 10
+                }
+            }
+        },
+		
+        {
+            "id": "ping-google",
+            "title": "google Ping Test",
+            "description": "Continuous ping to google DNS for connectivity monitoring",
+            "active": true,
+            "type": "command",
+            "shell": "cmd",
+            "command": "ping 8.8.8.8 -t",
+            "workingDir": "d:\\py_win_server_launcher",
+            "display": {
+                "colorScheme": "CGA",
+                "position": {
+                    "x": 800,
+                    "y": 50,
+                    "width": 60,
+                    "height": 10
+                }
+            }
+        },		
+		
+        {
+            "id": "tailor_server",
+            "title": "tailor frontend",
+            "description": "tailor virtual assistant",
+            "active": true,
+            "type": "python",
+            "command": "tailor_server.py",
+            "workingDir": "d:\\sw\\ollama_web_assistant",
+            "venv": "d:\\sw\\venv_ollama_web_assistant",
+            "display": {
+                "colorScheme": "Campbell Powershell",
+                "position": {
+                    "x": 10,
+                    "y": 10,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+		
+        {
+            "id": "gufo_server",
+            "title": "gufo frontend",
+            "description": "document collection manager frontend",
+            "active": true,
+            "type": "python",
+            "command": "gufo_server.py",
+            "workingDir": "d:\\sw\\gufo",
+            "venv": "d:\\sw\\venv_gufo",
+            "display": {
+                "colorScheme": "Solarized Light",
+                "position": {
+                    "x": 10,
+                    "y": 500,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+		
+
+        {
+			"id": "comfyUI",
+            "title": "comfyUI",
+            "description": "stable diffusion picture generation tool",
+
+            "active": true,
+            "type": "command",
+			"shell": "cmd",
+            "command": "run nvidia_gpu.bat",
+            "workingDir": "D:\\comfy\\ComfyUI_windows_portable_nvidia\\ComfyUI_windows_portable",
+            "display": {
+                "colorScheme": "One Half Dark",
+                "position": {
+                    "x": 900,
+                    "y": 800,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+		
+        {
+			"id": "openwebui",
+            "title": "OpenWebUI",
+            "description": "constantly updated llm web interface",
+            "active": true,
+            "type": "command",
+            "command": "open-webui serve",
+            "workingDir": "d:\\sw\\openwebui",
+            "venv": "d:\\sw\\venv_openwebui",
+            "display": {
+                "colorScheme": "Solarized Light",
+                "position": {
+                    "x": 900,
+                    "y": 10,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+		
+		
+		
+    ]
+}
+[2024-12-30 18:35:23] [ERROR] [Launcher] Stack Trace: at Get-ServerConfigs, D:\py_win_server_launcher\py_win_server_launcher.ps1: line 344
+at Start-ServerLauncher, D:\py_win_server_launcher\py_win_server_launcher.ps1: line 817
+at <ScriptBlock>, D:\py_win_server_launcher\py_win_server_launcher.ps1: line 871
+at <ScriptBlock>, <No file>: line 1
+[2024-12-30 18:42:32] [ERROR] [Launcher] Error in launcher: Error loading configurations: Invalid array passed in, extra trailing ','. (6076): {
+    "config": {
+        "logging": {
+            "enabled": true,
+            "directory": ".\\logs",
+            "filename": "py_win_server_launcher.log",
+            "maxLogSize": "10MB",
+            "maxLogFiles": 5
+        },
+        "terminal": {
+            "launchDelay": 500,
+            "titleLength": 22
+        },
+        "process": {
+            "gracefulShutdownTimeout": 5000,
+            "checkInterval": 1000
+        },
+        "defaults": {
+            "width": 80,
+            "height": 15,
+            "colorScheme": "Campbell Powershell"
+        },
+        "layouts": {
+            "twoByTwo": [
+                { "x": 10, "y": 10, "width": 80, "height": 15 },
+                { "x": 10, "y": 500, "width": 80, "height": 15 },
+                { "x": 900, "y": 10, "width": 80, "height": 15 },
+                { "x": 900, "y": 500, "width": 80, "height": 15 }
+            ],
+            "vertical": [
+                { "x": 0, "y": 0, "width": 80, "height": 15 },
+                { "x": 0, "y": 300, "width": 80, "height": 15 },
+                { "x": 0, "y": 600, "width": 80, "height": 15 },
+                { "x": 0, "y": 900, "width": 80, "height": 15 }
+            ],
+            "horizontal": [
+                { "x": 0, "y": 0, "width": 80, "height": 15 },
+                { "x": 600, "y": 0, "width": 80, "height": 15 },
+                { "x": 1200, "y": 0, "width": 80, "height": 15 },
+                { "x": 1800, "y": 0, "width": 80, "height": 15 }
+            ]
+        }
+    },
+    "servers": [
+        {
+            "id": "ols",
+            "title": "Ollama Server",
+            "description": "Local Ollama API server for AI model inference",
+            "active": true,
+            "type": "command",
+            "command": "d:\\py_win_server_launcher\\ollama_server_launcher.ps1",
+            "workingDir": "d:\\py_win_server_launcher",
+            "display": {
+                "colorScheme": "Tango Dark",
+                "position": {
+                    "x": 5,
+                    "y": 20,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+        {
+            "id": "ping-cloudflare",
+            "title": "Cloudflare Ping Test",
+            "description": "Continuous ping to Cloudflare DNS for connectivity monitoring",
+            "active": true,
+            "type": "command",
+            "shell": "cmd",
+            "command": "ping 1.1.1.1 -t",
+            "workingDir": "d:\\py_win_server_launcher",
+            "display": {
+                "colorScheme": "Tango Light",
+                "position": {
+                    "x": 5,
+                    "y": 20,
+                    "width": 60,
+                    "height": 10
+                }
+            }
+        },
+		
+        {
+            "id": "ping-google",
+            "title": "google Ping Test",
+            "description": "Continuous ping to google DNS for connectivity monitoring",
+            "active": true,
+            "type": "command",
+            "shell": "cmd",
+            "command": "ping 8.8.8.8 -t",
+            "workingDir": "d:\\py_win_server_launcher",
+            "display": {
+                "colorScheme": "CGA",
+                "position": {
+                    "x": 800,
+                    "y": 50,
+                    "width": 60,
+                    "height": 10
+                }
+            }
+        },		
+		
+        {
+            "id": "tailor_server",
+            "title": "tailor frontend",
+            "description": "tailor virtual assistant",
+            "active": true,
+            "type": "python",
+            "command": "tailor_server.py",
+            "workingDir": "d:\\sw\\ollama_web_assistant",
+            "venv": "d:\\sw\\venv_ollama_web_assistant",
+            "display": {
+                "colorScheme": "Campbell Powershell",
+                "position": {
+                    "x": 10,
+                    "y": 10,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+		
+        {
+            "id": "gufo_server",
+            "title": "gufo frontend",
+            "description": "document collection manager frontend",
+            "active": true,
+            "type": "python",
+            "command": "gufo_server.py",
+            "workingDir": "d:\\sw\\gufo",
+            "venv": "d:\\sw\\venv_gufo",
+            "display": {
+                "colorScheme": "Solarized Light",
+                "position": {
+                    "x": 10,
+                    "y": 500,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+		
+
+        {
+			"id": "comfyUI",
+            "title": "comfyUI",
+            "description": "stable diffusion picture generation tool",
+
+            "active": true,
+            "type": "command",
+			"shell": "cmd",
+            "command": "run nvidia_gpu.bat",
+            "workingDir": "D:\\comfy\\ComfyUI_windows_portable_nvidia\\ComfyUI_windows_portable",
+            "display": {
+                "colorScheme": "One Half Dark",
+                "position": {
+                    "x": 900,
+                    "y": 800,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+		
+        {
+			"id": "openwebui",
+            "title": "OpenWebUI",
+            "description": "constantly updated llm web interface",
+            "active": true,
+            "type": "command",
+            "command": "open-webui serve",
+            "workingDir": "d:\\sw\\openwebui",
+            "venv": "d:\\sw\\venv_openwebui",
+            "display": {
+                "colorScheme": "Solarized Light",
+                "position": {
+                    "x": 900,
+                    "y": 10,
+                    "width": 80,
+                    "height": 15
+                }
+            }
+        },
+		
+		
+		
+    ]
+}
+[2024-12-30 18:42:32] [ERROR] [Launcher] Stack Trace: at Get-ServerConfigs, D:\py_win_server_launcher\py_win_server_launcher.ps1: line 344
+at Start-ServerLauncher, D:\py_win_server_launcher\py_win_server_launcher.ps1: line 817
+at <ScriptBlock>, D:\py_win_server_launcher\py_win_server_launcher.ps1: line 871
+at <ScriptBlock>, <No file>: line 1
+[2024-12-30 18:57:42] [SUCCESS] [Config] Loaded 7 server configurations
+[2024-12-30 18:57:42] [INFO] [Launcher] Starting server checks...
+[2024-12-30 18:57:42] [INFO] [ols] Checking for running instances...
+[2024-12-30 18:57:42] [DEBUG] [ols] Looking for  command: d:\py_win_server_launcher\ollama_server_launcher.ps1
+[2024-12-30 18:57:43] [INFO] [ols] No running instances found
+[2024-12-30 18:57:43] [INFO] [ols] Added to launch queue
+[2024-12-30 18:57:43] [INFO] [ping-cloudflare] Checking for running instances...
+[2024-12-30 18:57:43] [DEBUG] [ping-cloudflare] Looking for cmd command: ping 1.1.1.1 -t
+[2024-12-30 18:57:43] [INFO] [ping-cloudflare] No running instances found
+[2024-12-30 18:57:43] [INFO] [ping-cloudflare] Added to launch queue
+[2024-12-30 18:57:43] [INFO] [ping-google] Checking for running instances...
+[2024-12-30 18:57:43] [DEBUG] [ping-google] Looking for cmd command: ping 8.8.8.8 -t
+[2024-12-30 18:57:43] [INFO] [ping-google] No running instances found
+[2024-12-30 18:57:43] [INFO] [ping-google] Added to launch queue
+[2024-12-30 18:57:43] [INFO] [tailor_server] Checking for running instances...
+[2024-12-30 18:57:43] [INFO] [tailor_server] No running instances found
+[2024-12-30 18:57:43] [INFO] [tailor_server] Added to launch queue
+[2024-12-30 18:57:43] [INFO] [gufo_server] Checking for running instances...
+[2024-12-30 18:57:44] [INFO] [gufo_server] No running instances found
+[2024-12-30 18:57:44] [INFO] [gufo_server] Added to launch queue
+[2024-12-30 18:57:44] [INFO] [comfyUI] Checking for running instances...
+[2024-12-30 18:57:44] [DEBUG] [comfyUI] Looking for cmd command: run nvidia_gpu.bat
+[2024-12-30 18:57:44] [INFO] [comfyUI] No running instances found
+[2024-12-30 18:57:44] [INFO] [comfyUI] Added to launch queue
+[2024-12-30 18:57:44] [INFO] [openwebui] Checking for running instances...
+[2024-12-30 18:57:44] [INFO] [openwebui] No running instances found
+[2024-12-30 18:57:44] [INFO] [openwebui] Added to launch queue
+[2024-12-30 18:57:44] [INFO] [Launcher] Launching 7 server(s)...
+[2024-12-30 18:57:44] [INFO] [ols] Launching server window...
+[2024-12-30 18:57:44] [INFO] [ols] Launching with command: d:\py_win_server_launcher\ollama_server_launcher.ps1
+[2024-12-30 18:57:46] [INFO] [ping-cloudflare] Launching server window...
+[2024-12-30 18:57:46] [INFO] [ping-cloudflare] Launching with command: ping 1.1.1.1 -t
+[2024-12-30 18:57:46] [INFO] [ping-google] Launching server window...
+[2024-12-30 18:57:46] [INFO] [ping-google] Launching with command: ping 8.8.8.8 -t
+[2024-12-30 18:57:47] [INFO] [tailor_server] Launching server window...
+[2024-12-30 18:57:47] [INFO] [tailor_server] Launching with command: tailor_server.py
+[2024-12-30 18:57:48] [INFO] [gufo_server] Launching server window...
+[2024-12-30 18:57:48] [INFO] [gufo_server] Launching with command: gufo_server.py
+[2024-12-30 18:57:48] [INFO] [comfyUI] Launching server window...
+[2024-12-30 18:57:48] [INFO] [comfyUI] Launching with command: run nvidia_gpu.bat
+[2024-12-30 18:57:49] [INFO] [openwebui] Launching server window...
+[2024-12-30 18:57:49] [INFO] [openwebui] Launching with command: open-webui serve
+[2024-12-30 19:01:44] [SUCCESS] [Config] Loaded 7 server configurations
+[2024-12-30 19:01:44] [INFO] [Launcher] Starting server checks...
+[2024-12-30 19:01:44] [INFO] [ols] Checking for running instances...
+[2024-12-30 19:01:44] [DEBUG] [ols] Looking for  command: d:\py_win_server_launcher\ollama_server_launcher.ps1
+[2024-12-30 19:01:45] [INFO] [ols] No running instances found
+[2024-12-30 19:01:45] [INFO] [ols] Added to launch queue
+[2024-12-30 19:01:45] [INFO] [ping-cloudflare] Checking for running instances...
+[2024-12-30 19:01:45] [DEBUG] [ping-cloudflare] Looking for cmd command: ping 1.1.1.1 -t
+[2024-12-30 19:01:47] [WARNING] [ping-cloudflare] Found 1 related processes
+[2024-12-30 19:01:50] [INFO] [ping-cloudflare] Attempting to stop process and cleanup for 11952...
+[2024-12-30 19:01:50] [DEBUG] [ping-cloudflare] Main process is: cmd.exe
+[2024-12-30 19:01:50] [DEBUG] [ping-cloudflare] Killing child process: 17640 (PING.EXE)
+[2024-12-30 19:01:50] [SUCCESS] [ping-cloudflare] Killed child process
+[2024-12-30 19:01:51] [DEBUG] [ping-cloudflare] Killing PowerShell process 13728
+[2024-12-30 19:01:51] [SUCCESS] [ping-cloudflare] Killed PowerShell process
+[2024-12-30 19:01:51] [INFO] [ping-cloudflare] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 19:01:51] [INFO] [ping-cloudflare] Added to launch queue
+[2024-12-30 19:01:51] [INFO] [ping-google] Checking for running instances...
+[2024-12-30 19:01:51] [DEBUG] [ping-google] Looking for cmd command: ping 8.8.8.8 -t
+[2024-12-30 19:01:53] [WARNING] [ping-google] Found 1 related processes
+[2024-12-30 19:01:57] [INFO] [ping-google] Attempting to stop process and cleanup for 9384...
+[2024-12-30 19:01:57] [DEBUG] [ping-google] Main process is: cmd.exe
+[2024-12-30 19:01:58] [DEBUG] [ping-google] Killing child process: 17032 (PING.EXE)
+[2024-12-30 19:01:58] [SUCCESS] [ping-google] Killed child process
+[2024-12-30 19:01:59] [DEBUG] [ping-google] Killing PowerShell process 8376
+[2024-12-30 19:01:59] [SUCCESS] [ping-google] Killed PowerShell process
+[2024-12-30 19:01:59] [INFO] [ping-google] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 19:01:59] [INFO] [ping-google] Added to launch queue
+[2024-12-30 19:01:59] [INFO] [tailor_server] Checking for running instances...
+[2024-12-30 19:02:02] [WARNING] [tailor_server] Found 2 related processes
+[2024-12-30 19:02:29] [INFO] [tailor_server] Attempting to stop process and cleanup for 5232...
+[2024-12-30 19:02:29] [DEBUG] [tailor_server] Main process is: python.exe
+[2024-12-30 19:02:29] [DEBUG] [tailor_server] Killing child process: 9804 (python.exe)
+[2024-12-30 19:02:29] [SUCCESS] [tailor_server] Killed child process
+[2024-12-30 19:02:29] [DEBUG] [tailor_server] Killing main process 5232
+[2024-12-30 19:02:29] [SUCCESS] [tailor_server] Killed main process
+[2024-12-30 19:02:30] [DEBUG] [tailor_server] Killing PowerShell process 17632
+[2024-12-30 19:02:30] [SUCCESS] [tailor_server] Killed PowerShell process
+[2024-12-30 19:02:30] [INFO] [tailor_server] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 19:02:30] [INFO] [tailor_server] Attempting to stop process and cleanup for 9804...
+[2024-12-30 19:02:30] [DEBUG] [tailor_server] Main process is: 
+[2024-12-30 19:02:31] [INFO] [tailor_server] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 19:02:31] [INFO] [tailor_server] Added to launch queue
+[2024-12-30 19:02:31] [INFO] [gufo_server] Checking for running instances...
+[2024-12-30 19:02:34] [WARNING] [gufo_server] Found 2 related processes
+[2024-12-30 19:02:37] [INFO] [gufo_server] Attempting to stop process and cleanup for 19816...
+[2024-12-30 19:02:37] [DEBUG] [gufo_server] Main process is: python.exe
+[2024-12-30 19:02:38] [DEBUG] [gufo_server] Killing child process: 19856 (python.exe)
+[2024-12-30 19:02:38] [SUCCESS] [gufo_server] Killed child process
+[2024-12-30 19:02:38] [DEBUG] [gufo_server] Killing main process 19816
+[2024-12-30 19:02:38] [SUCCESS] [gufo_server] Killed main process
+[2024-12-30 19:02:38] [DEBUG] [gufo_server] Killing PowerShell process 1560
+[2024-12-30 19:02:38] [SUCCESS] [gufo_server] Killed PowerShell process
+[2024-12-30 19:02:38] [INFO] [gufo_server] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 19:02:38] [INFO] [gufo_server] Attempting to stop process and cleanup for 19856...
+[2024-12-30 19:02:39] [DEBUG] [gufo_server] Main process is: 
+[2024-12-30 19:02:40] [INFO] [gufo_server] Note: You can close the terminal tab with Ctrl+D
+[2024-12-30 19:02:40] [INFO] [gufo_server] Added to launch queue
+[2024-12-30 19:02:40] [INFO] [comfyUI] Checking for running instances...
+[2024-12-30 19:02:40] [DEBUG] [comfyUI] Looking for cmd command: nvidia_gpu.bat
+[2024-12-30 19:02:40] [INFO] [comfyUI] No running instances found
+[2024-12-30 19:02:40] [INFO] [comfyUI] Added to launch queue
+[2024-12-30 19:02:40] [INFO] [openwebui] Checking for running instances...
+[2024-12-30 19:02:41] [INFO] [openwebui] No running instances found
+[2024-12-30 19:02:41] [INFO] [openwebui] Added to launch queue
+[2024-12-30 19:02:41] [INFO] [Launcher] Launching 7 server(s)...
+[2024-12-30 19:02:41] [INFO] [ols] Launching server window...
+[2024-12-30 19:02:41] [INFO] [ols] Launching with command: d:\py_win_server_launcher\ollama_server_launcher.ps1
+[2024-12-30 19:02:41] [INFO] [ping-cloudflare] Launching server window...
+[2024-12-30 19:02:41] [INFO] [ping-cloudflare] Launching with command: ping 1.1.1.1 -t
+[2024-12-30 19:02:42] [INFO] [ping-google] Launching server window...
+[2024-12-30 19:02:42] [INFO] [ping-google] Launching with command: ping 8.8.8.8 -t
+[2024-12-30 19:02:43] [INFO] [tailor_server] Launching server window...
+[2024-12-30 19:02:43] [INFO] [tailor_server] Launching with command: tailor_server.py
+[2024-12-30 19:02:43] [INFO] [gufo_server] Launching server window...
+[2024-12-30 19:02:43] [INFO] [gufo_server] Launching with command: gufo_server.py
+[2024-12-30 19:02:44] [INFO] [comfyUI] Launching server window...
+[2024-12-30 19:02:44] [INFO] [comfyUI] Launching with command: nvidia_gpu.bat
+[2024-12-30 19:02:45] [INFO] [openwebui] Launching server window...
+[2024-12-30 19:02:45] [INFO] [openwebui] Launching with command: open-webui serve
+[2024-12-30 19:08:13] [INFO] [ping-cloudflare] Server is marked as inactive, skipping
+[2024-12-30 19:08:13] [SUCCESS] [Config] Loaded 6 server configurations
+[2024-12-30 19:08:13] [INFO] [Launcher] Starting server checks...
+[2024-12-30 19:08:13] [INFO] [ols] Checking for running instances...
+[2024-12-30 19:08:13] [DEBUG] [ols] Looking for  command: d:\py_win_server_launcher\ollama_server_launcher.ps1
+[2024-12-30 19:08:13] [INFO] [ols] No running instances found
+[2024-12-30 19:08:13] [INFO] [ols] Added to launch queue
+[2024-12-30 19:08:13] [INFO] [ping-google] Checking for running instances...
+[2024-12-30 19:08:13] [DEBUG] [ping-google] Looking for cmd command: ping 8.8.8.8 -t
+[2024-12-30 19:08:14] [INFO] [ping-google] No running instances found
+[2024-12-30 19:08:14] [INFO] [ping-google] Added to launch queue
+[2024-12-30 19:08:14] [INFO] [tailor_server] Checking for running instances...
+[2024-12-30 19:08:14] [INFO] [tailor_server] No running instances found
+[2024-12-30 19:08:14] [INFO] [tailor_server] Added to launch queue
+[2024-12-30 19:08:14] [INFO] [gufo_server] Checking for running instances...
+[2024-12-30 19:08:14] [INFO] [gufo_server] No running instances found
+[2024-12-30 19:08:14] [INFO] [gufo_server] Added to launch queue
+[2024-12-30 19:08:14] [INFO] [comfyUI] Checking for running instances...
+[2024-12-30 19:08:14] [DEBUG] [comfyUI] Looking for cmd command: run_nvidia_gpu.bat
+[2024-12-30 19:08:15] [INFO] [comfyUI] No running instances found
+[2024-12-30 19:08:15] [INFO] [comfyUI] Added to launch queue
+[2024-12-30 19:08:15] [INFO] [openwebui] Checking for running instances...
+[2024-12-30 19:08:15] [INFO] [openwebui] No running instances found
+[2024-12-30 19:08:15] [INFO] [openwebui] Added to launch queue
+[2024-12-30 19:08:15] [INFO] [Launcher] Launching 6 server(s)...
+[2024-12-30 19:08:15] [INFO] [ols] Launching server window...
+[2024-12-30 19:08:15] [INFO] [ols] Launching with command: d:\py_win_server_launcher\ollama_server_launcher.ps1
+[2024-12-30 19:08:16] [INFO] [ping-google] Launching server window...
+[2024-12-30 19:08:16] [INFO] [ping-google] Launching with command: ping 8.8.8.8 -t
+[2024-12-30 19:08:16] [INFO] [tailor_server] Launching server window...
+[2024-12-30 19:08:16] [INFO] [tailor_server] Launching with command: tailor_server.py
+[2024-12-30 19:08:17] [INFO] [gufo_server] Launching server window...
+[2024-12-30 19:08:17] [INFO] [gufo_server] Launching with command: gufo_server.py
+[2024-12-30 19:08:18] [INFO] [comfyUI] Launching server window...
+[2024-12-30 19:08:18] [INFO] [comfyUI] Launching with command: run_nvidia_gpu.bat
+[2024-12-30 19:08:18] [INFO] [openwebui] Launching server window...
+[2024-12-30 19:08:18] [INFO] [openwebui] Launching with command: open-webui serve
